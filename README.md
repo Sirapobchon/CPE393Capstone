@@ -20,6 +20,16 @@ For subject CPE393, KMUTT
     - Prisma
     - MongoDB
 
+# React file edited
+    - index.css
+    - /Components
+        - /Assets
+            - cat.jpg
+            - dog.jpg
+        - /TicTacToe
+            - TicTacToe.css
+            - TicTacToe.jsx
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
