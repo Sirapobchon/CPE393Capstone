@@ -3,6 +3,7 @@ import './TicTacToe.css'
 import dog_icon from '../Assets/dog.png'
 import cat_icon from '../Assets/cat.jpg'
 
+// Build Table
 let data = [
   ["", 1],
   ["", 1],
@@ -15,15 +16,16 @@ let data = [
   ["", 1],
 ]; // Each element now has a size property
 
+// Main Game
 const TicTacToe = () => {
-  const [selectedSize, setSelectedSize] = useState('S'); // Current selected size
-  const [count, setCount] = useState(0);
-  const [lock, setLock] = useState(false);
-  const [remainingSPieces, setRemainingSPieces] = useState(3);
-  const [remainingMPieces, setRemainingMPieces] = useState(2);
-  const [remainingLPieces, setRemainingLPieces] = useState(2);
+  const [selectedSize, setSelectedSize] = useState('S'); // Current selected size (S, M, L)
+  const [count, setCount] = useState(0); // Size Count
+  const [lock, setLock] = useState(false); 
+  // const [remainingSPieces, setRemainingSPieces] = useState(3);
+  // const [remainingMPieces, setRemainingMPieces] = useState(2);
+  // const [remainingLPieces, setRemainingLPieces] = useState(2);
 
-  const toggle = (e, num) => {
+  const toggle = (e, num) => { // Place new piece after selected size
     if (lock || data[num][0] !== "") {
       const existingSize = data[num][1];
       const newSize = getSelectedSizeValue();
@@ -32,6 +34,7 @@ const TicTacToe = () => {
         // Overtake smaller piece
         data[num][0] = count % 2 === 0 ? 'Dog' : 'Cat';
         data[num][1] = newSize;
+        // Picture Source
         e.target.innerHTML = `<img src='${data[num][0] === 'Dog' ? dog_icon : cat_icon}' style="width: ${newSize * 50}px">`; // Adjust image size based on size
         setCount(count + 1);
         const winner = calculateWinner();
@@ -58,6 +61,7 @@ const TicTacToe = () => {
     }
   };
 
+  // Check for a winner
   const calculateWinner = () => {
     const lines = [
       [0, 1, 2],
@@ -69,6 +73,7 @@ const TicTacToe = () => {
       [0, 4, 8],
       [2, 4, 6],
     ];
+
 
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
@@ -88,6 +93,7 @@ const TicTacToe = () => {
     return null;
   };
 
+  // Get selected size
   const getSelectedSizeValue = () => {
     if (selectedSize === 'S') {
       return 1;
@@ -98,6 +104,7 @@ const TicTacToe = () => {
     }
   };
 
+  // Build Main 3x3 Board
   return (
     <div className='container'>
       <h1 className="title">PawClaw <span>XO</span></h1>
