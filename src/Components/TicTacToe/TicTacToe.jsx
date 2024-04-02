@@ -3,7 +3,7 @@ import './TicTacToe.css'
 import dog_icon from '../Assets/dog.png'
 import cat_icon from '../Assets/cat.jpg'
 
-// Build Table
+// Set Table Variables
 let data = [
   ["", 1],
   ["", 1],
