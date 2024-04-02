@@ -1,0 +1,81 @@
+.tic-container{
+    text-align: center;
+}
+.title{
+    margin-top: 50px;
+    color: royalblue;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title span{
+    color: darkgoldenrod;
+    padding-left: 15px;
+}
+.reset{
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: rgb(91, 223, 228);
+    font-size: 26px;
+    color: salmon;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.boxes{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background: turquoise;
+    border: 4px solid pink;
+    border-radius: 12 solid;
+    cursor: pointer
+}
+.board{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    margin: auto;
+}
+.Size{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    margin: auto;
+}
+.PieceSizeS{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: greenyellow;
+    border: 4px solid pink;
+    border-radius: 12 solid;
+    cursor: pointer
+}
+.PieceSizeM{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: lightyellow;
+    border: 4px solid pink;
+    border-radius: 12 solid;
+    cursor: pointer
+}
+.PieceSizeL{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: rgb(209, 111, 111);
+    border: 4px solid pink;
+    border-radius: 12 solid;
+    cursor: pointer
+}
+
+.PieceSizeL:hover {
+    background-color: aqua;
+    border: 4px solid white;
+}
