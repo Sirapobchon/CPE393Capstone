@@ -1,3 +1,43 @@
+# CPE393Capstone
+For subject CPE393, KMUTT
+
+## Paws & Claws XO
+
+## Credit/Project Member
+1. Napat Chansawang
+2. Nutt Ratanakul
+3. Phitchayada Songrak
+4. Sirikarn Aueamornsuk
+5. Titiphon Phunmongkon
+6. Sirapob Chonphanarak 
+
+## Coding Language
+1. Frontend
+    - Python
+    - Node.JS
+    - React
+2. Backend
+    - Prisma
+    - MongoDB
+
+# React file edited
+- src
+    - Components
+        - Assets
+            - cat.jpg
+            - dog.jpg
+        - TicTacToe
+            - TicTacToe.css
+            - TicTacToe.jsx
+        - header
+            - header.css
+            - header.jsx
+        - users
+            - login.jsx
+            - register.jsx
+    - index.css
+- tailwind.config.js
+            
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
