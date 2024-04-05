@@ -5,21 +5,50 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
-  //previewFeatures = ["mongodb"]
+	provider = "prisma-client-js"
+	//previewFeatures = ["mongodb"]
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+	provider = "mongodb"
+	url      = env("DATABASE_URL")
 }
 
 model Profile {
-  id    String  @id @default(auto()) @map("_id") @db.ObjectId
-  username String? @unique
-  nickname String? @unique
-  email String? @unique
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+	id          String    	@id @default(auto()) @map("_id") @db.ObjectId
+	username    String?   	@unique
+	nickname    String?   	@unique
+	email       String?   	@unique
+	createdAt   DateTime  	@default(now()) @map("created_at")
+	updatedAt	DateTime  	@updatedAt @map("updated_at")
+}
+
+// From the ER Diagram
+// Unsure if it's correct need checking
+// Mapping is probably wrong
+model Leaderboard {
+	id			String    	@id @map("_id")
+	rank		Int
+	username	String
+	playAmount 	Int       	@map("play_amount")
+	winAmount	Int       	@map("win_amount")
+	lossAmount	Int       	@map("loss_amount")
+}
+
+model Game {
+	game_id    	String		@id @map("_id")
+	rank        Int
+	game_mode  	String
+	winner     	String
+	player     	String
+	wincount   	Int
+}
+
+model game_mode{
+	game_id    	String   	@id @map("_id")
+	mode3x3		Int
+	mode4x4		Int
+	with_ai		Int
+	with_player	Int
 }
 
