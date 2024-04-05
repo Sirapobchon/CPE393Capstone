@@ -42,6 +42,12 @@ For subject CPE393, KMUTT
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## First-time start 
+
+For first-time running the program please use `npm update` in the terminal to setup the React.
+
+Then you can use `npm start` to run the app as stated below
+
 ## Available Scripts
 
 In the project directory, you can run:
