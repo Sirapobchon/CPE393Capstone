@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom"
 import Login from './Components/users/login';
 import Header from './Components/header/header';
 import Register from './Components/users/register';
+import Leaderboard from './Components/Leaderboard/leaderboard';
+
 function App() {
   return (
     <>
@@ -12,6 +14,7 @@ function App() {
         <Route path='/' element={<TicTacToe  />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
+        <Route path='/leaderboard' element={<Leaderboard />}></Route>
       </Routes>
     </>
   );

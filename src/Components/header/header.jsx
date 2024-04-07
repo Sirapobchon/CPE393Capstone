@@ -5,8 +5,9 @@ export default function Navbar(){
     return <nav className="nav">
         <Link to="/" className="site-title">
             PawClaw
-            </Link>
+        </Link>
         <ul>
+            <CustomLink to="/leaderboard">Leaderboard</CustomLink> 
             <CustomLink to="/login">Login</CustomLink>
         </ul>
     </nav>

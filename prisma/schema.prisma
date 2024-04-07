@@ -23,7 +23,7 @@ model Profile {
 	updatedAt	DateTime  	@updatedAt @map("updated_at")
 }
 
-// From the ER Diagram
+// From the ER Diagram blame @Sirapobchon
 // Unsure if it's correct need checking
 // Mapping is probably wrong
 model Leaderboard {
