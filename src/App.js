@@ -5,6 +5,7 @@ import Login from './Components/users/login';
 import Header from './Components/header/header';
 import Register from './Components/users/register';
 import Leaderboard from './Components/Leaderboard/leaderboard';
+import Home from './Components/users/Home';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/leaderboard' element={<Leaderboard />}></Route>
+        <Route path='/Home' element={<Home />}></Route>
       </Routes>
     </>
   );

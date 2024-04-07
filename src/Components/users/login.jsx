@@ -5,6 +5,7 @@ import BGvid from '../Assets/loginbg.mp4'
 import loginbut from '../Assets/element/Login.png'
 import Regisbut from '../Assets/element/Register.png'
 import Noacc from '../Assets/element/noacc.png'
+import BackBut from '../Assets/element/back.png'
 export default function Login() {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
@@ -19,6 +20,9 @@ export default function Login() {
     }
     const handleRegister = () => {
         navigate('/register');
+    }
+    const handleBack = () => {
+        navigate('/home');
     }
     return (
         <div className="LoginPage">
@@ -41,6 +45,9 @@ export default function Login() {
                 </p>
                 <button className="RegisBut" onClick={handleRegister}>
                     <img src={Regisbut}alt="Register button"></img>
+                </button>
+                <button className="Backbut" onClick={handleBack}>
+                    <img src={BackBut}alt="Back button"></img>
                 </button>
             
         </div>
