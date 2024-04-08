@@ -1,0 +1,95 @@
+.RegisterPage {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.AnimationBg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.reciveEmail {
+  position: absolute;
+  fill: none;
+  top: 36.5%;
+  left: 60%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+.reciveUsername {
+  position: absolute;
+  fill: none;
+  top: 45%;
+  left: 60%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+.recivePassword {
+  position: absolute;
+  top: 54%;
+  left: 60%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+.reciveConfirmPassword {
+  position: absolute;
+  top: 63%;
+  left: 60%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+.LoginForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+.RegisBut {
+  z-index: 1;
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loginbut {
+  position: absolute;
+  align-items: center;
+  top: 85%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.BackBut {
+  position: absolute;
+  align-items: center;
+  top: 85%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.placeholder {
+  /* Set the background color to transparent */
+  background-color: transparent;
+}
