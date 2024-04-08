@@ -39,13 +39,7 @@
     border-radius: 50px;
     border: 3px solid black;
 }  
-.loginbut1{
-    z-index: 1;
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .loginbut2{
     z-index: 1;
     position: absolute;
@@ -53,13 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.Backbut{
-    z-index: 1;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .Backbut1{
     z-index: 1;
     position: absolute;
@@ -67,13 +55,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.Backbut2{
-    z-index: 1;
-    position: absolute;
-    top: 83%;
-    left: 50px%;
-    transform: translate(-50%, -50%);
-}
+
 .LoginForm {
     position: absolute;
     top: 50%;
@@ -97,10 +79,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.placeholder {
-    /* Set the background color to transparent */
-    background-color: transparent;
-}
+
 .LoginBoard{
     position: fixed;
     align-items: center;
@@ -116,13 +95,7 @@
     left: 35%;
     transform: translate(-50%, -50%);
 }
-.passtt{ 
-    z-index: 1;
-    position: absolute;
-    top: 47%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
+
 .passtt1{ 
     z-index: 1;
     position: absolute;
