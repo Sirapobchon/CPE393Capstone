@@ -16,7 +16,20 @@
 .reciveUsername{
     position: absolute;
     fill: none;
-    top: 40%;
+    top: 35%;
+    left: 60%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: #ffffff; 
+    padding: 15px;
+    border-radius: 50px;
+    border: 3px solid black;
+    
+}
+.reciveUsername1{
+    position: absolute;
+    fill: none;
+    top: 41%;
     left: 60%;
     width: 600px;
     transform: translate(-50%, -50%);
@@ -38,6 +51,17 @@
     border: 3px solid black;
    
 }
+.recivePassword1{
+    position: absolute;
+    top: 50%;
+    left:60%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: #ffffff; 
+    padding: 15px;
+    border-radius: 50px;
+    border: 3px solid black;
+}  
 .loginbut{
     z-index: 1;
     position: absolute;
@@ -69,6 +93,13 @@
     transform: translate(-50%, -50%);
 }
 .RegisBut{
+    position: absolute;
+    align-items: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.RegisBut1{
     position: absolute;
     align-items: center;
     top: 80%;

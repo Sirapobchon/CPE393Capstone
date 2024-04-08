@@ -28,11 +28,11 @@ export default function Login() {
         <div className="LoginPage">
             <video className="AnimationBg" src={BGvid} autoPlay muted loop></video> 
             <div>
-                <div className="reciveUsername">
+                <div className="reciveUsername1">
                     <input type="text" placeholder="username"
                     required value={username} onChange={(e) => setUsername(e.target.value)}/>
                 </div>
-                <div className="recivePassword">
+                <div className="recivePassword1">
                     <input type="password"  placeholder="password"
                     required value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
@@ -43,7 +43,7 @@ export default function Login() {
                 <p className="NoAcc">
                 <img src={Noacc}alt="No account ?"></img>
                 </p>
-                <button className="RegisBut" onClick={handleRegister}>
+                <button className="RegisBut1" onClick={handleRegister}>
                     <img src={Regisbut}alt="Register button"></img>
                 </button>
                 <button className="Backbut" onClick={handleBack}>
