@@ -6,6 +6,8 @@ import BGvid from "../Assets/registerbg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import signupbut from "../Assets/element/signup.png";
 import backbut from "../Assets/element/back.png";
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
 
 function Register() {
   //   const isDesktopOrLaptop = useMediaQuery(
@@ -26,7 +28,7 @@ function Register() {
   const [email, setEmail] = useState("");
   const [rePassword, setRePassword] = useState("");
   // const [nickname, setNickname] = useState("");
-  const handleRegister = () => {
+  const handleRegister = async () => {
     if (
       username !== "" &&
       password !== "" &&
@@ -34,6 +36,14 @@ function Register() {
       // nickname !== "" &&
       rePassword === password
     ) {
+      await prisma.profile.create({
+        data: {
+          username,
+          //nickname,
+          email,
+          password
+        },
+      })
       alert(`Welcome! ${username} let go to login page.`);
       navigate("/login");
     } else {

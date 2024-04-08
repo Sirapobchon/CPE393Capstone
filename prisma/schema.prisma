@@ -16,8 +16,8 @@ datasource db {
 
 model Profile {
 	id          String    	@id @default(auto()) @map("_id") @db.ObjectId
-	username    String?   	@unique
-	nickname    String?   	@unique
+	username    String   	@unique
+	//nickname    String?   	@unique
 	email       String?   	@unique
 	createdAt   DateTime  	@default(now()) @map("created_at")
 	updatedAt	DateTime  	@updatedAt @map("updated_at")
@@ -27,7 +27,7 @@ model Profile {
 // Unsure if it's correct need checking
 // Mapping is probably wrong
 model Leaderboard {
-	id			String    	@id @map("_id")
+	id			String    	@id @default(auto()) @map("_id") @db.ObjectId
 	rank		Int
 	username	String
 	playAmount 	Int       	@map("play_amount")
@@ -36,7 +36,7 @@ model Leaderboard {
 }
 
 model Game {
-	game_id    	String		@id @map("_id")
+	game_id    	String		@id @default(auto()) @map("_id") @db.ObjectId
 	rank        Int
 	game_mode  	String
 	winner     	String
@@ -45,10 +45,9 @@ model Game {
 }
 
 model game_mode{
-	game_id    	String   	@id @map("_id")
+	game_id    	String   	@id @default(auto()) @map("_id") @db.ObjectId
 	mode3x3		Int
 	mode4x4		Int
 	with_ai		Int
 	with_player	Int
 }
-
