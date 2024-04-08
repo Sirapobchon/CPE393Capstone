@@ -6,6 +6,7 @@ import loginbut from "../Assets/element/Login.png";
 import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
 import BackBut from "../Assets/element/back.png";
+import LoginBoard from "../Assets/element/loginboard.png";
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -26,7 +27,8 @@ export default function Login() {
   };
   return (
     <div className="LoginPage">
-      <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
+      
+      <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
       <div>
         <div className="reciveUsername1">
           <input

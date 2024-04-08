@@ -31,7 +31,7 @@
     fill: none;
     top: 41%;
     left: 60%;
-    width: 600px;
+    width: 400px;
     transform: translate(-50%, -50%);
     background: #ffffff; 
     padding: 15px;
@@ -43,7 +43,7 @@
     position: absolute;
     top: 50%;
     left:60%;
-    width: 600px;
+    width: 400px;
     transform: translate(-50%, -50%);
     background: #ffffff; 
     padding: 15px;
@@ -55,7 +55,7 @@
     position: absolute;
     top: 50%;
     left:60%;
-    width: 600px;
+    width: 400px;
     transform: translate(-50%, -50%);
     background: #ffffff; 
     padding: 15px;
@@ -109,4 +109,11 @@
 .placeholder {
     /* Set the background color to transparent */
     background-color: transparent;
+}
+.LoginBoard{
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
