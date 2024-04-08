@@ -7,7 +7,10 @@ import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
 import BackBut from "../Assets/element/back.png";
 import LoginBoard from "../Assets/element/loginboard.png";
-
+import usrtt from "../Assets/element/username.png";
+import passtt from "../Assets/element/password.png";
+import logintt from "../Assets/logintt.png";
+import dirt from "../Assets/element/dirt.png";
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -54,7 +57,10 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
   };
   return (
     <div className="LoginPage">
+      <img className="logintt" src={logintt} alt="Login tt"></img>
       
+      <img className="usrtt" src={usrtt} alt="Login Board"></img>
+      <img className="passtt" src={passtt} alt="Login Board"></img>
       <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
       <div>
         <div className="reciveUsername1">
@@ -76,7 +82,7 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
           />
         </div>
 
-        <button className="loginbut" onClick={handleLogin}>
+        <button className="loginbut1" onClick={handleLogin}>
           <img src={loginbut} alt="Login Button"></img>
         </button>
         <p className="NoAcc">
@@ -85,10 +91,13 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
         <button className="RegisBut1" onClick={handleRegister}>
           <img src={Regisbut} alt="Register button"></img>
         </button>
-        <button className="Backbut" onClick={handleBack}>
+        <button className="Backbut1" onClick={handleBack}>
           <img src={BackBut} alt="Back button"></img>
         </button>
       </div>
+     <img className="dirt1" src={dirt} alt="Login Board"></img>
+     <img className="dirt2" src={dirt} alt="Login Board"></img>
+     <img className="dirt3" src={dirt} alt="Login Board"></img>
     </div>
   );
 }

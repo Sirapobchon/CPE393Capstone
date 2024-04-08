@@ -13,25 +13,13 @@
     width: 100%;
     object-fit: cover;
 }
-.reciveUsername{
-    position: absolute;
-    fill: none;
-    top: 35%;
-    left: 60%;
-    width: 600px;
-    transform: translate(-50%, -50%);
-    background: #ffffff; 
-    padding: 15px;
-    border-radius: 50px;
-    border: 3px solid black;
-    
-}
+
 .reciveUsername1{
     position: absolute;
     fill: none;
-    top: 41%;
-    left: 60%;
-    width: 400px;
+    top: 38%;
+    left: 58%;
+    width: 550px;
     transform: translate(-50%, -50%);
     background: #ffffff; 
     padding: 15px;
@@ -39,40 +27,35 @@
     border: 3px solid black;
     
 }
-.recivePassword{
-    position: absolute;
-    top: 50%;
-    left:60%;
-    width: 400px;
-    transform: translate(-50%, -50%);
-    background: #ffffff; 
-    padding: 15px;
-    border-radius: 50px;
-    border: 3px solid black;
-   
-}
 .recivePassword1{
     position: absolute;
-    top: 50%;
-    left:60%;
-    width: 400px;
+    top: 47%;
+    left:58%;
+    width: 550px;
     transform: translate(-50%, -50%);
     background: #ffffff; 
     padding: 15px;
     border-radius: 50px;
     border: 3px solid black;
 }  
-.loginbut{
+.loginbut1{
     z-index: 1;
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .Backbut{
     z-index: 1;
     position: absolute;
-    top: 89%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Backbut1{
+    z-index: 1;
+    position: absolute;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -88,21 +71,14 @@
 .NoAcc{
     position: absolute;
     align-items: center;
-    top: 73%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.RegisBut{
-    position: absolute;
-    align-items: center;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .RegisBut1{
     position: absolute;
     align-items: center;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -111,9 +87,51 @@
     background-color: transparent;
 }
 .LoginBoard{
-    position: absolute;
+    position: fixed;
     align-items: center;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.usrtt{
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+.passtt{
+    z-index: 1;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+.logintt{
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dirt1{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dirt2{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(-50%);
+}
+.dirt3{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    transform: translateX(-50%);
 }
