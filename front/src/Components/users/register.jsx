@@ -36,8 +36,35 @@ function Register() {
       // nickname !== "" &&
       rePassword === password
     ) {
-      alert(`Welcome! ${username} let go to login page.`);
-      navigate("/login");
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      
+      const raw = JSON.stringify({
+        "username": username,
+        "email": email,
+        "password": password
+      });
+      
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+      };
+      
+      await fetch("http://localhost:8080/api/users/register", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+          if(result.success === 1){
+            alert(`Welcome! ${username} let go to login page.`);
+            navigate('/login')
+        }
+        else{
+          alert("register fail")
+        }
+        })
+        .catch((error) => console.error(error));
     } else {
       alert("Please enter all infomation");
     }
