@@ -65,8 +65,8 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
       {/* Body */}
       <body className="Body">
         <video className="AnimationBg" src={BGvid} autoPlay muted loop></video> {/* background */}
-        <img className="usrtt" src={usrtt} alt="Login Board"></img> {/* body content */}
-        <img className="passtt" src={passtt} alt="Login Board"></img>
+        <img className="usrtt1" src={usrtt} alt="Login Board"></img> {/* body content */}
+        <img className="passtt1" src={passtt} alt="Login Board"></img>
         <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
         <div>
           <div className="reciveUsername1">
@@ -88,7 +88,7 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
             />
           </div>
   
-          <button className="loginbut1" onClick={handleLogin}>
+          <button className="loginbut2" onClick={handleLogin}>
             <img src={loginbut} alt="Login Button"></img>
           </button>
           <p className="NoAcc">

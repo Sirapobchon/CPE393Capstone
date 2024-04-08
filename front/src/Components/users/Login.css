@@ -46,6 +46,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.loginbut2{
+    z-index: 1;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .Backbut{
     z-index: 1;
     position: absolute;
@@ -58,6 +65,13 @@
     position: absolute;
     top: 83%;
     left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Backbut2{
+    z-index: 1;
+    position: absolute;
+    top: 83%;
+    left: 50px%;
     transform: translate(-50%, -50%);
 }
 .LoginForm {
@@ -90,22 +104,30 @@
 .LoginBoard{
     position: fixed;
     align-items: center;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.usrtt{
+
+.usrtt1{
     z-index: 1;
     position: absolute;
     top: 38%;
-    left: 37%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
-.passtt{
+.passtt{ 
     z-index: 1;
     position: absolute;
     top: 47%;
-    left: 37%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.passtt1{ 
+    z-index: 1;
+    position: absolute;
+    top: 47%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
 .logintt{
@@ -115,6 +137,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .dirt1{
     z-index: 0;
     position: absolute;
