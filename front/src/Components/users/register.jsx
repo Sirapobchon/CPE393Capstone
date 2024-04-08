@@ -148,7 +148,7 @@ function Register() {
           />
         </div>
 
-        <button className="loginbut1" onClick={handleLogin}>
+        <button className="loginbut2" onClick={handleLogin}>
           <img src={loginbut} alt="Login Button"></img>
         </button>
         <button className="RegisBut" onClick={handleRegister}>

@@ -88,6 +88,12 @@
   left: 40%;
   transform: translate(-50%, -50%);
 }
+.loginbut2 {
+  align-items: center;
+  top: 81%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
 .BackBut2 {
   position: absolute;
   align-items: center;
