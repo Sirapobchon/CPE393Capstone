@@ -36,6 +36,7 @@ function Register() {
       // nickname !== "" &&
       rePassword === password
     ) {
+      //Currently not fully working
       await prisma.profile.create({
         data: {
           username,

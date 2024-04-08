@@ -6,6 +6,9 @@ import loginbut from "../Assets/element/Login.png";
 import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
 import BackBut from "../Assets/element/back.png";
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
