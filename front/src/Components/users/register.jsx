@@ -6,6 +6,8 @@ import BGvid from "../Assets/registerbg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import signupbut from "../Assets/element/signup.png";
 import backbut from "../Assets/element/back.png";
+import clicksound from '../SFX/interface-button.mp3'
+const clickaudio = new Audio(clicksound);
 
 function Register() {
   //   const isDesktopOrLaptop = useMediaQuery(
@@ -26,7 +28,7 @@ function Register() {
   const [email, setEmail] = useState("");
   const [rePassword, setRePassword] = useState("");
   // const [nickname, setNickname] = useState("");
-  const handleRegister = () => {
+  const handleRegister = async () => {
     if (
       username !== "" &&
       password !== "" &&
@@ -41,9 +43,11 @@ function Register() {
     }
   };
   const handleLogin = () => {
+    clickaudio.play()
     navigate("/login");
   };
   const handleBack = () => {
+    clickaudio.play()
     navigate("/home");
   };
   //   const handleMediaQueryChange = (matches) => {
@@ -56,38 +60,42 @@ function Register() {
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <div>
         <div className="reciveEmail">
-          <input
+          <input className="Textbox"
             type="text"
             placeholder="email"
             required
             value={email}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="reciveUsername">
-          <input
+          <input className="Textbox"
             type="text"
             placeholder="username"
             required
             value={username}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="recivePassword">
-          <input
+          <input className="Textbox"
             type="password"
             placeholder="password"
             required
             value={password}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="reciveConfirmPassword">
-          <input
+          <input className="Textbox"
             type="password"
             placeholder="confirm password"
             required
             value={rePassword}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setRePassword(e.target.value)}
           />
         </div>

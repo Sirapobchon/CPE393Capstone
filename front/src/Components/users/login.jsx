@@ -6,7 +6,11 @@ import loginbut from "../Assets/element/Login.png";
 import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
 import BackBut from "../Assets/element/back.png";
+<<<<<<< HEAD:src/Components/users/login.jsx
 import LoginBoard from "../Assets/element/loginboard.png";
+=======
+
+>>>>>>> e9241b27357711a5175dfddab859fbd5b5f42680:front/src/Components/users/login.jsx
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");

@@ -7,6 +7,7 @@ import leaderbut from "../Assets/element/Leaderboard.png";
 import characterbut from "../Assets/element/character.png";
 import logoutbut from "../Assets/element/loguot.png";
 
+
 function MainGame() {
   const navigate = useNavigate();
   const handlePlay = () => {

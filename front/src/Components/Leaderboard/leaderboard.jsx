@@ -7,8 +7,8 @@ import id from '../Assets/element/id.png'
 import usr from '../Assets/element/usr.png'
 import score from '../Assets/element/score.png'
 import sort from '../Assets/element/sort.png'
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
+import clicksound from '../SFX/interface-button.mp3'
+const clickaudio = new Audio(clicksound);
 
 const Leaderboard = () => {
     const [players, setPlayers] = useState([]);
@@ -24,10 +24,12 @@ const Leaderboard = () => {
   const navigate = useNavigate();
   // Function to sort players by score
   const sortPlayersByScore = () => {
+    clickaudio.play();
     const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
     setPlayers(sortedPlayers);
   };
   const handleBack = () => {
+    clickaudio.play();
     navigate('/home');
   }
 
