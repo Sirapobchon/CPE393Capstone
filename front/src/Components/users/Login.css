@@ -47,6 +47,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.loginbut3{
+    z-index: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .Backbut1{
     z-index: 1;
