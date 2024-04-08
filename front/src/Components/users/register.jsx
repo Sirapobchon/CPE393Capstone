@@ -7,7 +7,10 @@ import loginbut from "../Assets/element/Login.png";
 import signupbut from "../Assets/element/signup.png";
 import backbut from "../Assets/element/back.png";
 import { PrismaClient } from '@prisma/client'
+import clicksound from '../SFX/interface-button.mp3'
+
 const prisma = new PrismaClient()
+const clickaudio = new Audio(clicksound);
 
 function Register() {
   //   const isDesktopOrLaptop = useMediaQuery(
@@ -36,43 +39,27 @@ function Register() {
       // nickname !== "" &&
       rePassword === password
     ) {
-      const myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
-      
-      const raw = JSON.stringify({
-        "username": username,
-        "email": email,
-        "password": password
-      });
-      
-      const requestOptions = {
-        method: "POST",
-        headers: myHeaders,
-        body: raw,
-        redirect: "follow"
-      };
-      
-      await fetch("http://localhost:8080/api/users/register", requestOptions)
-        .then((response) => response.json())
-        .then((result) => {
-          console.log(result);
-          if(result.success === 1){
-            alert(`Welcome! ${username} let go to login page.`);
-            navigate('/login')
-        }
-        else{
-          alert("register fail")
-        }
-        })
-        .catch((error) => console.error(error));
+      //Currently not fully working
+      await prisma.profile.create({
+        data: {
+          username,
+          //nickname,
+          email,
+          password
+        },
+      })
+      alert(`Welcome! ${username} let go to login page.`);
+      navigate("/login");
     } else {
       alert("Please enter all infomation");
     }
   };
   const handleLogin = () => {
+    clickaudio.play()
     navigate("/login");
   };
   const handleBack = () => {
+    clickaudio.play()
     navigate("/home");
   };
   //   const handleMediaQueryChange = (matches) => {
@@ -85,38 +72,42 @@ function Register() {
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <div>
         <div className="reciveEmail">
-          <input
+          <input className="Textbox"
             type="text"
             placeholder="email"
             required
             value={email}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className="reciveUsername">
-          <input
+          <input className="Textbox"
             type="text"
             placeholder="username"
             required
             value={username}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="recivePassword">
-          <input
+          <input className="Textbox"
             type="password"
             placeholder="password"
             required
             value={password}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="reciveConfirmPassword">
-          <input
+          <input className="Textbox"
             type="password"
             placeholder="confirm password"
             required
             value={rePassword}
+            onClick={() => clickaudio.play()}
             onChange={(e) => setRePassword(e.target.value)}
           />
         </div>

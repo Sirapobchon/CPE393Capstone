@@ -6,6 +6,8 @@ import playbut from "../Assets/element/play.png";
 import leaderbut from "../Assets/element/Leaderboard.png";
 import characterbut from "../Assets/element/character.png";
 import logoutbut from "../Assets/element/loguot.png";
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
 
 function MainGame() {
   const navigate = useNavigate();
