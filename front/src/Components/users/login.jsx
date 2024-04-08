@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import BGvid from "../Assets/loginbg.mp4";
+//import BGvid from "../Assets/loginbg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
@@ -14,8 +14,34 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const handleLogin = () => {
     if (username !== "" && password !== "") {
-      alert(`Welcome ${username}!`);
-      navigate("/MainGame");
+      const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify({
+  "email": username,
+  "password": password
+});
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow"
+};
+
+fetch("http://localhost:8080/api/users/login", requestOptions)
+  .then((response) => response.json())
+  .then((result) => {
+    console.log(result);
+    if(result.success === 1){
+      alert(`Welcome! ${username} let go to login page.`);
+      navigate('/mainGame')
+  }
+  else{
+    alert("login fail")
+  }
+  })
+  .catch((error) => console.error(error));
     } else {
       alert("Please enter both username and password");
     }
