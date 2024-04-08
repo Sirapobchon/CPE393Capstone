@@ -44,7 +44,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## First-time start 
 
-For first-time running the program please use `npm update` in the terminal to setup the React.
+Frontend and Backend is seperate. Don't forget to `cd ` into the correct folder before starting.
+
+For first-time running the program please use `npm i` in the terminal to setup the React.
+
+This need to be done for both the Frontend and Backend to use the backend.
 
 Then you can use `npm start` to run the app as stated below
 
