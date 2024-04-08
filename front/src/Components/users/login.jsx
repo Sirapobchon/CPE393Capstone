@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-//import BGvid from "../Assets/loginbg.mp4";
+import BGvid from "../Assets/CloudBg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import Regisbut from "../Assets/element/Register.png";
 import Noacc from "../Assets/element/noacc.png";
@@ -58,7 +58,7 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
   return (
     <div className="LoginPage">
       <img className="logintt" src={logintt} alt="Login tt"></img>
-      
+      <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <img className="usrtt" src={usrtt} alt="Login Board"></img>
       <img className="passtt" src={passtt} alt="Login Board"></img>
       <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
