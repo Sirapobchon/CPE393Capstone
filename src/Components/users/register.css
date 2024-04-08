@@ -21,7 +21,7 @@
   width: 500px;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  padding: 15px;
+  padding: 0px;
   border-radius: 50px;
   border: 3px solid black;
 }
@@ -33,7 +33,7 @@
   width: 500px;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  padding: 15px;
+  padding: 0px;
   border-radius: 50px;
   border: 3px solid black;
 }
@@ -44,9 +44,9 @@
   width: 500px;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  padding: 15px;
+  padding: 0px;
   border-radius: 50px;
-  border: 3px solid black;
+  border: 3px solid rgb(0, 0, 0);
 }
 .reciveConfirmPassword {
   position: absolute;
@@ -55,9 +55,15 @@
   width: 500px;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  padding: 15px;
+  padding: 0px;
   border-radius: 50px;
   border: 3px solid black;
+}
+.Textbox {
+  width: 494px;
+  border: 3px solid white;
+  padding: 15px;  
+  border-radius: 50px;
 }
 .LoginForm {
   position: absolute;
