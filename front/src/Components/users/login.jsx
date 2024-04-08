@@ -57,47 +57,59 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
   };
   return (
     <div className="LoginPage">
-      <img className="logintt" src={logintt} alt="Login tt"></img>
-      <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
-      <img className="usrtt" src={usrtt} alt="Login Board"></img>
-      <img className="passtt" src={passtt} alt="Login Board"></img>
-      <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
-      <div>
-        <div className="reciveUsername1">
-          <input
-            type="text"
-            placeholder="username"
-            required
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+      {/* Header */}
+      <header className="Header">
+        <img className="logintt" src={logintt} alt="Login tt"></img> {/* header content */}
+      </header>
+  
+      {/* Body */}
+      <body className="Body">
+        <video className="AnimationBg" src={BGvid} autoPlay muted loop></video> {/* background */}
+        <img className="usrtt" src={usrtt} alt="Login Board"></img> {/* body content */}
+        <img className="passtt" src={passtt} alt="Login Board"></img>
+        <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
+        <div>
+          <div className="reciveUsername1">
+            <input
+              type="text"
+              placeholder="username"
+              required
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="recivePassword1">
+            <input
+              type="password"
+              placeholder="password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+  
+          <button className="loginbut1" onClick={handleLogin}>
+            <img src={loginbut} alt="Login Button"></img>
+          </button>
+          <p className="NoAcc">
+            <img src={Noacc} alt="No account ?"></img>
+          </p>
+          <button className="RegisBut1" onClick={handleRegister}>
+            <img src={Regisbut} alt="Register button"></img>
+          </button>
+          <button className="Backbut1" onClick={handleBack}>
+            <img src={BackBut} alt="Back button"></img>
+          </button>
         </div>
-        <div className="recivePassword1">
-          <input
-            type="password"
-            placeholder="password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-
-        <button className="loginbut1" onClick={handleLogin}>
-          <img src={loginbut} alt="Login Button"></img>
-        </button>
-        <p className="NoAcc">
-          <img src={Noacc} alt="No account ?"></img>
-        </p>
-        <button className="RegisBut1" onClick={handleRegister}>
-          <img src={Regisbut} alt="Register button"></img>
-        </button>
-        <button className="Backbut1" onClick={handleBack}>
-          <img src={BackBut} alt="Back button"></img>
-        </button>
-      </div>
-     <img className="dirt1" src={dirt} alt="Login Board"></img>
-     <img className="dirt2" src={dirt} alt="Login Board"></img>
-     <img className="dirt3" src={dirt} alt="Login Board"></img>
+      </body>
+  
+      {/* Footer */}
+      <footer className="Footer">
+        <img className="dirt1" src={dirt} alt="Login Board"></img> {/* footer content */}
+        <img className="dirt2" src={dirt} alt="Login Board"></img>
+        <img className="dirt3" src={dirt} alt="Login Board"></img>
+      </footer>
     </div>
   );
+  
 }
