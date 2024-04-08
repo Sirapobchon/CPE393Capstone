@@ -7,10 +7,7 @@ import id from '../Assets/element/id.png'
 import usr from '../Assets/element/usr.png'
 import score from '../Assets/element/score.png'
 import sort from '../Assets/element/sort.png'
-import { PrismaClient } from '@prisma/client'
 import clicksound from '../SFX/interface-button.mp3'
-
-const prisma = new PrismaClient()
 const clickaudio = new Audio(clicksound);
 
 const Leaderboard = () => {

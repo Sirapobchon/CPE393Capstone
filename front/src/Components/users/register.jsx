@@ -6,10 +6,7 @@ import BGvid from "../Assets/registerbg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import signupbut from "../Assets/element/signup.png";
 import backbut from "../Assets/element/back.png";
-import { PrismaClient } from '@prisma/client'
 import clicksound from '../SFX/interface-button.mp3'
-
-const prisma = new PrismaClient()
 const clickaudio = new Audio(clicksound);
 
 function Register() {
@@ -39,15 +36,6 @@ function Register() {
       // nickname !== "" &&
       rePassword === password
     ) {
-      //Currently not fully working
-      await prisma.profile.create({
-        data: {
-          username,
-          //nickname,
-          email,
-          password
-        },
-      })
       alert(`Welcome! ${username} let go to login page.`);
       navigate("/login");
     } else {

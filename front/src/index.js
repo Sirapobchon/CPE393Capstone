@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
