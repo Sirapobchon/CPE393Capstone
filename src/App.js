@@ -6,6 +6,7 @@ import Header from './Components/header/header';
 import Register from './Components/users/register';
 import Leaderboard from './Components/Leaderboard/leaderboard';
 import Home from './Components/users/Home';
+import HowToPlay from './Components/users/HowToPlay';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/register' element={<Register />}></Route>
         <Route path='/leaderboard' element={<Leaderboard />}></Route>
         <Route path='/Home' element={<Home />}></Route>
+        <Route path='/HowToPlay' element={<HowToPlay />}></Route>
       </Routes>
     </>
   );
