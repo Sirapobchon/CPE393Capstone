@@ -5,17 +5,22 @@ import BGvid from "../Assets/mainbg.mp4";
 import loginbut from "../Assets/element/Login.png";
 import leaderbut from "../Assets/element/Leaderboard.png";
 import howtobut from "../Assets/element/HowToPlay.png";
+import clicksound from "../SFX/interface-button.mp3";
 
+const clickaudio = new Audio(clicksound);
 function Home() {
   const navigate = useNavigate();
   const handleLogin = () => {
     navigate("/login");
+    clickaudio.play();
   };
   const handleLeader = () => {
     navigate("/Leaderboard");
+    clickaudio.play();
   };
   const handleHowTo = () => {
     navigate("/HowToPlay");
+    clickaudio.play();
   };
 
   return (

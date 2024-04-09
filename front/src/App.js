@@ -7,6 +7,7 @@ import Register from "./Components/users/register";
 import Leaderboard from "./Components/Leaderboard/leaderboard";
 import Home from "./Components/users/Home";
 import MainGame from "./Components/users/MainGame";
+import GameMode from "./Components/users/GameMode";
 import HowToPlay from "./Components/users/HowToPlay";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />}></Route>
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/MainGame" element={<MainGame />}></Route>
+        <Route path="/GameMode" element={<GameMode />}></Route>
         <Route path="/HowToPlay" element={<HowToPlay />}></Route>
       </Routes>
     </>
