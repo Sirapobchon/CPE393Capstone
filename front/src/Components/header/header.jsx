@@ -11,6 +11,8 @@ export default function Navbar() {
         <CustomLink to="/leaderboard">Leaderboard</CustomLink>
         <CustomLink to="/login">Login</CustomLink>
         <CustomLink to="/GameMode">Game</CustomLink>
+        <CustomLink to="/Home">Home</CustomLink>
+        <CustomLink to="/MainGame">Main Game</CustomLink>
       </ul>
     </nav>
   );
