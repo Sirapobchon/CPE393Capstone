@@ -9,6 +9,9 @@ import gamemodett from "../Assets/element/gamemodett.png";
 import dirt from "../Assets/element/dirt.png";
 import benchwbush from "../Assets/element/benchwbush.png";
 import treewstone from "../Assets/element/treewstone.png";
+import ballooncat from "../Assets/element/ballooncat.gif";
+import dogrun from "../Assets/element/dogrun.gif";
+import sleepycat from "../Assets/element/sleepycat.gif";
 import clicksound from "../SFX/interface-button.mp3";
 
 const clickaudio = new Audio(clicksound);
@@ -33,6 +36,9 @@ function GameMode() {
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <img className="treewstone" src={treewstone} alt="Tree with Stone"></img>
       <img className="benchwbush" src={benchwbush} alt="Bench with Bush"></img>
+      <img className="sleepycat" src={sleepycat} alt="Sleepycat"></img>
+      <img className="dogrun" src={dogrun} alt="dogrun"></img>
+      <img className="ballooncat" src={ballooncat} alt="ballooncat"></img>
 
       <img className="dirt1" src={dirt} alt="Login Board"></img>
       <img className="dirt2" src={dirt} alt="Login Board"></img>

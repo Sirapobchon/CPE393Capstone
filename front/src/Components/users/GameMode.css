@@ -89,3 +89,31 @@
   height: 200px;
   width: auto;
 }
+.sleepycat {
+  z-index: 0;
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 75%;
+  height: 200px;
+  width: auto;
+}
+.ballooncat {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 10%;
+  height: 300px;
+  width: auto;
+}
+.dogrun {
+  z-index: 0;
+  position: absolute;
+  top: 65%;
+  bottom: 0;
+  left: 30%;
+  height: 300px;
+  width: auto;
+  transform: rotateY(180deg);
+}
