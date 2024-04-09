@@ -74,7 +74,7 @@
 .treewstone {
   z-index: 0;
   position: absolute;
-  top: 5%;
+  top: 10%;
   bottom: 0;
   left: 5%;
   height: 780px;
@@ -110,7 +110,7 @@
 .dogrun {
   z-index: 0;
   position: absolute;
-  top: 65%;
+  top: 66%;
   bottom: 0;
   left: 30%;
   height: 300px;
@@ -121,6 +121,6 @@
   transition: filter 0.3s ease-in-out; /* Smooth transition for the filter property */
 }
 
-.button-img:hover { 
+.button-img:hover {
   transform: scale(1.3);
 }
