@@ -39,7 +39,7 @@ const Leaderboard = () => {
       <button className="sort" onClick={sortPlayersByScore}>
       <img src={sort}alt="sort button"></img> </button>
       <button className="Backbut" onClick={handleBack}>
-                    <img src={BackBut}alt="Back button"></img>
+                    <img src={BackBut}alt="Back button" className="button-img"></img>
                 </button>
       <table>
         <thead>
