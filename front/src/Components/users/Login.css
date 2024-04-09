@@ -139,3 +139,10 @@
     left: 70%;
     transform: translateX(-50%);
 }
+.button-img {
+    transition: filter 0.3s ease-in-out; 
+  }
+  
+.button-img:hover { 
+    transform: scale(1.1);
+  }

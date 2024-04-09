@@ -89,16 +89,16 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
           </div>
   
           <button className="loginbut3" onClick={handleLogin}>
-            <img src={loginbut} alt="Login Button"></img>
+            <img src={loginbut} alt="Login Button" className="button-img"></img>
           </button>
           <p className="NoAcc">
             <img src={Noacc} alt="No account ?"></img>
           </p>
           <button className="RegisBut1" onClick={handleRegister}>
-            <img src={Regisbut} alt="Register button"></img>
+            <img src={Regisbut} alt="Register button" className="button-img"></img>
           </button>
           <button className="Backbut1" onClick={handleBack}>
-            <img src={BackBut} alt="Back button"></img>
+            <img src={BackBut} alt="Back button" className="button-img"></img>
           </button>
         </div>
       </body>

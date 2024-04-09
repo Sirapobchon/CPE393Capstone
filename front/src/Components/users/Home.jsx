@@ -22,13 +22,13 @@ function Home() {
     <div className="Homepage">
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <button className="loginbut" onClick={handleLogin}>
-        <img src={loginbut} alt="Login Button"></img>
+        <img src={loginbut} alt="Login Button" className="button-img" />
       </button>
       <button className="Leaderbut1" onClick={handleLeader}>
-        <img src={leaderbut} alt="Leaderboard Button"></img>
+        <img src={leaderbut} alt="Leaderboard Button" className="button-img" />
       </button>
       <button className="HowTobut" onClick={handleHowTo}>
-        <img src={howtobut} alt="Leaderboard Button"></img>
+        <img src={howtobut} alt="How to Play Button" className="button-img" />
       </button>
     </div>
   );
