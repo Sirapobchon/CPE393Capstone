@@ -27,16 +27,16 @@ function MainGame() {
     <div className="MainGamepage">
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <button className="Playbut" onClick={handlePlay}>
-        <img src={playbut} alt="Play Button"></img>
+        <img src={playbut} alt="Play Button" className="button-img"></img>
       </button>
       <button className="Leaderbut" onClick={handleLeader}>
-        <img src={leaderbut} alt="Leaderboard Button"></img>
+        <img src={leaderbut} alt="Leaderboard Button" className="button-img"></img>
       </button>
       <button className="Characterbut" onClick={handleCharacter}>
-        <img src={characterbut} alt="Character Button"></img>
+        <img src={characterbut} alt="Character Button" className="button-img"></img>
       </button>
       <button className="logoutbut" onClick={handleLogout}>
-        <img src={logoutbut} alt="Logout Button"></img>
+        <img src={logoutbut} alt="Logout Button" className="button-img"></img>
       </button>
     </div>
   );

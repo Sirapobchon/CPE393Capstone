@@ -117,3 +117,10 @@
   width: auto;
   transform: rotateY(180deg);
 }
+.button-img {
+  transition: filter 0.3s ease-in-out; /* Smooth transition for the filter property */
+}
+
+.button-img:hover { 
+  transform: scale(1.3);
+}
