@@ -149,13 +149,13 @@ function Register() {
         </div>
 
         <button className="loginbut2" onClick={handleLogin}>
-          <img src={loginbut} alt="Login Button"></img>
+          <img src={loginbut} alt="Login Button" className="button-img"></img>
         </button>
         <button className="RegisBut" onClick={handleRegister}>
-          <img src={signupbut} alt="signup button"></img>
+          <img src={signupbut} alt="signup button" className="button-img"></img>
         </button>
         <button className="BackBut3" onClick={handleBack}>
-          <img src={backbut} alt="back button"></img>
+          <img src={backbut} alt="back button" className="button-img"></img>
         </button>
       </div>
       <img className="dirt1" src={dirt} alt="Dirt"></img>
