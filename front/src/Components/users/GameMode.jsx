@@ -45,13 +45,13 @@ function GameMode() {
       <img className="dirt3" src={dirt} alt="Login Board"></img>
 
       <button className="threebut" onClick={handleFourthtable}>
-        <img src={threebut} alt="3x3 button"></img>
+        <img src={threebut} alt="3x3 button" className="button-img"></img>
       </button>
       <button className="fourthbut" onClick={handleThreetable}>
-        <img src={fourthbut} alt="4x4 button"></img>
+        <img src={fourthbut} alt="4x4 button" className="button-img"></img>
       </button>
       <button className="BackBut2" onClick={handleBack}>
-        <img src={backbut} alt="back button"></img>
+        <img src={backbut} alt="back button" className="button-img"></img>
       </button>
     </div>
   );
