@@ -35,8 +35,14 @@ function GameMode() {
       <img className="GameModett" src={gamemodett} alt="Game Mode tt"></img>
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <img className="treewstone" src={treewstone} alt="Tree with Stone"></img>
-      <img className="benchwbush" src={benchwbush} alt="Bench with Bush"></img>
-      <img className="sleepycat" src={sleepycat} alt="Sleepycat"></img>
+      <div className="benchContainer">
+        <img
+          className="benchwbush"
+          src={benchwbush}
+          alt="Bench with Bush"
+        ></img>
+        <img className="sleepycat" src={sleepycat} alt="Sleepycat"></img>
+      </div>
       <img className="dogrun" src={dogrun} alt="dogrun"></img>
       <img className="ballooncat" src={ballooncat} alt="ballooncat"></img>
 

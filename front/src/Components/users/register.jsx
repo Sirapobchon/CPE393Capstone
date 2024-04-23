@@ -154,7 +154,7 @@ function Register() {
         <button className="RegisBut" onClick={handleRegister}>
           <img src={signupbut} alt="signup button" className="button-img"></img>
         </button>
-        <button className="BackBut3" onClick={handleBack}>
+        <button className="BackBut4" onClick={handleBack}>
           <img src={backbut} alt="back button" className="button-img"></img>
         </button>
       </div>
