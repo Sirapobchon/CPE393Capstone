@@ -22,33 +22,32 @@ export default function Login() {
     if (username !== "" && password !== "") {
       const myHeaders = new Headers();
       clickaudio.play();
-myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Content-Type", "application/json");
 
-const raw = JSON.stringify({
-  "email": username,
-  "password": password
-});
+      const raw = JSON.stringify({
+        email: username,
+        password: password,
+      });
 
-const requestOptions = {
-  method: "POST",
-  headers: myHeaders,
-  body: raw,
-  redirect: "follow"
-};
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
 
-fetch("http://localhost:8080/api/users/login", requestOptions)
-  .then((response) => response.json())
-  .then((result) => {
-    console.log(result);
-    if(result.success === 1){
-      alert(`Welcome! ${username} let go to login page.`);
-      navigate('/mainGame')
-  }
-  else{
-    alert("login fail")
-  }
-  })
-  .catch((error) => console.error(error));
+      fetch("http://localhost:8080/api/users/login", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+          if (result.success === 1) {
+            alert(`Welcome! ${username} let go to login page.`);
+            navigate("/mainGame");
+          } else {
+            alert("login fail");
+          }
+        })
+        .catch((error) => console.error(error));
     } else {
       alert("Please enter both username and password");
     }
@@ -65,18 +64,22 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
     <div className="LoginPage">
       {/* Header */}
       <header className="Header">
-        <img className="logintt" src={logintt} alt="Login tt"></img> {/* header content */}
+        <img className="logintt" src={logintt} alt="Login tt"></img>{" "}
+        {/* header content */}
       </header>
-  
+
       {/* Body */}
       <body className="Body">
-        <video className="AnimationBg" src={BGvid} autoPlay muted loop></video> {/* background */}
-        <img className="usrtt1" src={usrtt} alt="Login Board"></img> {/* body content */}
+        <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>{" "}
+        {/* background */}
+        <img className="usrtt1" src={usrtt} alt="Login Board"></img>{" "}
+        {/* body content */}
         <img className="passtt1" src={passtt} alt="Login Board"></img>
         <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
         <div>
           <div className="reciveUsername1">
             <input
+              className="Textbox"
               type="text"
               placeholder="username"
               required
@@ -86,6 +89,7 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
           </div>
           <div className="recivePassword1">
             <input
+              className="Textbox"
               type="password"
               placeholder="password"
               required
@@ -93,7 +97,7 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-  
+
           <button className="loginbut3" onClick={handleLogin}>
             <img src={loginbut} alt="Login Button" className="button-img"></img>
           </button>
@@ -101,21 +105,25 @@ fetch("http://localhost:8080/api/users/login", requestOptions)
             <img src={Noacc} alt="No account ?"></img>
           </p>
           <button className="RegisBut1" onClick={handleRegister}>
-            <img src={Regisbut} alt="Register button" className="button-img"></img>
+            <img
+              src={Regisbut}
+              alt="Register button"
+              className="button-img"
+            ></img>
           </button>
           <button className="Backbut1" onClick={handleBack}>
             <img src={BackBut} alt="Back button" className="button-img"></img>
           </button>
         </div>
       </body>
-  
+
       {/* Footer */}
       <footer className="Footer">
-        <img className="dirt1" src={dirt} alt="Login Board"></img> {/* footer content */}
+        <img className="dirt1" src={dirt} alt="Login Board"></img>{" "}
+        {/* footer content */}
         <img className="dirt2" src={dirt} alt="Login Board"></img>
         <img className="dirt3" src={dirt} alt="Login Board"></img>
       </footer>
     </div>
   );
-  
 }
