@@ -15,11 +15,11 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<TicTacToe />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/tictactoe" element={<TicTacToe />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/leaderboard" element={<Leaderboard />}></Route>
-        <Route path="/Home" element={<Home />}></Route>
         <Route path="/MainGame" element={<MainGame />}></Route>
         <Route path="/GameMode" element={<GameMode />}></Route>
         <Route path="/HowToPlay" element={<HowToPlay />}></Route>
