@@ -13,7 +13,7 @@ import dirt from "../Assets/element/dirt.png";
 function MainGame() {
   const navigate = useNavigate();
   const handlePlay = () => {
-    navigate("/play");
+    navigate("/GameMode");
   };
   const handleLeader = () => {
     navigate("/Leaderboard");
@@ -22,8 +22,10 @@ function MainGame() {
     navigate("/Character");
   };
   const handleLogout = () => {
-    navigate("/home");
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = '/login';
   };
+  
 
   return (
     <div className="MainGamepage">

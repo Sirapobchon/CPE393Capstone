@@ -1,6 +1,6 @@
+import React from 'react';
 import "./App.css";
 import TicTacToe from "./Components/TicTacToe/TicTacToe";
-import { Route, Routes } from "react-router-dom";
 import Login from "./Components/users/login";
 import Header from "./Components/header/header";
 import Register from "./Components/users/register";
@@ -9,20 +9,29 @@ import Home from "./Components/users/Home";
 import MainGame from "./Components/users/MainGame";
 import GameMode from "./Components/users/GameMode";
 import HowToPlay from "./Components/users/HowToPlay";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+// Mock function to check if user is logged in
+const isAuthenticated = () => localStorage.getItem("isLoggedIn") === "true";
+
+// Updated ProtectedRoute component to accept a component prop
+const ProtectedRoute = ({ component: Component }) => (
+  isAuthenticated() ? <Component /> : <Navigate to="/login" replace />
+);
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<TicTacToe />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/leaderboard" element={<Leaderboard />}></Route>
-        <Route path="/Home" element={<Home />}></Route>
-        <Route path="/MainGame" element={<MainGame />}></Route>
-        <Route path="/GameMode" element={<GameMode />}></Route>
-        <Route path="/HowToPlay" element={<HowToPlay />}></Route>
+        <Route path="/" element={<ProtectedRoute component={Home} />} />
+        <Route path="/tictactoe" element={<ProtectedRoute component={TicTacToe} />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/leaderboard" element={<ProtectedRoute component={Leaderboard} />} />
+        <Route path="/MainGame" element={<ProtectedRoute component={MainGame} />} />
+        <Route path="/GameMode" element={<ProtectedRoute component={GameMode} />} />
+        <Route path="/HowToPlay" element={<ProtectedRoute component={HowToPlay} />} />
       </Routes>
     </>
   );

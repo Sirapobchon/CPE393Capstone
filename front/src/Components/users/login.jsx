@@ -41,7 +41,8 @@ export default function Login() {
         .then((result) => {
           console.log(result);
           if (result.success === 1) {
-            alert(`Welcome! ${username} let go to login page.`);
+            localStorage.setItem('username', username);
+            alert(`Welcome! ${username} `);
             navigate("/mainGame");
           } else {
             alert("login fail");
