@@ -24,7 +24,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<ProtectedRoute component={Home} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/tictactoe" element={<ProtectedRoute component={TicTacToe} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

@@ -8,6 +8,7 @@ export default function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem('username'); // Clear username from storage
+    localStorage.setItem('isLoggedIn', false);
     navigate("/"); // Redirect to home page
   };
 
@@ -18,6 +19,8 @@ export default function Navbar() {
       </Link>
       <ul>
         <CustomLink to="/leaderboard">Leaderboard</CustomLink>
+        <CustomLink to="/GameMode">Game</CustomLink>
+        <CustomLink to="/MainGame">Main Game</CustomLink>
         {username ? (
           <>
             <li>Welcome, {username}</li>
@@ -26,9 +29,6 @@ export default function Navbar() {
         ) : (
           <CustomLink to="/login">Login</CustomLink>
         )}
-        <CustomLink to="/GameMode">Game</CustomLink>
-        <CustomLink to="/Home">Home</CustomLink>
-        <CustomLink to="/MainGame">Main Game</CustomLink>
       </ul>
     </nav>
   );

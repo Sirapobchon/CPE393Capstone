@@ -22,6 +22,7 @@ function MainGame() {
     navigate("/Character");
   };
   const handleLogout = () => {
+    localStorage.removeItem('username'); // Clear username from storage
     localStorage.removeItem("isLoggedIn");
     window.location.href = '/login';
   };

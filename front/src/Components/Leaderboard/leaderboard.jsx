@@ -33,7 +33,7 @@ function Leaderboard () {
   };
   const handleBack = () => {
     clickaudio.play();
-    navigate('/home');
+    navigate('/mainGame');
   }
 
   return (
