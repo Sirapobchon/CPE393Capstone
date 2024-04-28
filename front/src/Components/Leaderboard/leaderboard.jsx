@@ -10,15 +10,18 @@ import sort from '../Assets/element/sort.png'
 import clicksound from '../SFX/interface-button.mp3'
 const clickaudio = new Audio(clicksound);
 
-const Leaderboard = () => {
+function Leaderboard () {
     const [players, setPlayers] = useState([]);
   
     useEffect(() => {
-      // Fetch data from your backend server
-      fetch('/api/players')
-        .then((response) => response.json())
-        .then((data) => setPlayers(data))
-        .catch((error) => console.error('Error fetching players:', error));
+      // Fetch data from ours backend server
+      async function fetchData() {
+        await fetch('http://localhost:8080/api/users/leader')
+          .then((response) => response.json())
+          .then((data) => setPlayers(data)) //I don't think this is working @Sirapobchon
+          .catch((error) => console.error('Error fetching players:', error));
+      }
+    fetchData();
     }, []); // Empty dependency array ensures this effect runs once when the component mounts
     
   const navigate = useNavigate();
