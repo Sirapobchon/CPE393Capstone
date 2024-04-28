@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom';
 import "./App.css";
 import TicTacToe from "./Components/TicTacToe/TicTacToe";
 import Login from "./Components/users/login";
@@ -10,6 +9,7 @@ import Home from "./Components/users/Home";
 import MainGame from "./Components/users/MainGame";
 import GameMode from "./Components/users/GameMode";
 import HowToPlay from "./Components/users/HowToPlay";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Mock function to check if user is logged in
 const isAuthenticated = () => localStorage.getItem("isLoggedIn") === "true";

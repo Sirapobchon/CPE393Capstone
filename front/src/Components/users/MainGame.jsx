@@ -20,8 +20,10 @@ function MainGame() {
     navigate("/Character");
   };
   const handleLogout = () => {
-    navigate("/login");
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = '/login';
   };
+  
 
   return (
     <div className="MainGamepage">
