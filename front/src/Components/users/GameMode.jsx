@@ -13,16 +13,17 @@ import ballooncat from "../Assets/element/ballooncat.gif";
 import dogrun from "../Assets/element/dogrun.gif";
 import sleepycat from "../Assets/element/sleepycat.gif";
 import clicksound from "../SFX/interface-button.mp3";
+import TicTacToe from "../TicTacToe/TicTacToe";
 
 const clickaudio = new Audio(clicksound);
 function GameMode() {
   const navigate = useNavigate();
   const handleFourthtable = () => {
-    navigate("/4x4Board");
+    navigate("/ticTacToe"); //3x3Board
     clickaudio.play();
   };
   const handleThreetable = () => {
-    navigate("/3x3Board");
+    navigate("/4x4Board"); //4x4Board
     clickaudio.play();
   };
   const handleBack = () => {

@@ -11,7 +11,7 @@ import logoutbut from "../Assets/element/loguot.png";
 function MainGame() {
   const navigate = useNavigate();
   const handlePlay = () => {
-    navigate("/play");
+    navigate("/GameMode");
   };
   const handleLeader = () => {
     navigate("/Leaderboard");
@@ -20,7 +20,7 @@ function MainGame() {
     navigate("/Character");
   };
   const handleLogout = () => {
-    navigate("/home");
+    navigate("/login");
   };
 
   return (
