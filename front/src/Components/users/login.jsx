@@ -42,6 +42,7 @@ export default function Login() {
           console.log(result);
           if (result.success === 1) {
             localStorage.setItem('username', username);
+            localStorage.setItem('isLoggedIn', true);
             alert(`Welcome! ${username} `);
             navigate("/mainGame");
           } else {
