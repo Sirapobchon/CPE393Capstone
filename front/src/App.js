@@ -31,7 +31,7 @@ function App() {
         <Route path="/leaderboard" element={<ProtectedRoute component={Leaderboard} />} />
         <Route path="/MainGame" element={<ProtectedRoute component={MainGame} />} />
         <Route path="/GameMode" element={<ProtectedRoute component={GameMode} />} />
-        <Route path="/HowToPlay" element={<ProtectedRoute component={HowToPlay} />} />
+        <Route path="/HowToPlay" element={<HowToPlay />} />
       </Routes>
     </>
   );

@@ -11,7 +11,7 @@ function HowToPlay() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/home');
+    navigate('/');
     clickaudio.play();
   };
 
