@@ -117,13 +117,13 @@
 .button-img:hover {
   transform: scale(1.1);
 }
-/* @media screen and (max-width: 1600px) and (min-width:900px){
+@media screen and (max-width: 1280px) and (min-width:769px){
   .loginbut {
     z-index: 1;
     position: absolute;
     align-items: center;
     height: auto;
-    width: 35%;
+    width: 25%;
     max-width: 280px;
     top: 45%;
     left: 50%;
@@ -135,7 +135,7 @@
       position: absolute;
       align-items: center;
       height: auto;
-      width: 35%;
+      width: 25%;
       max-width: 280px;
       top: 55%;
       left: 50%;
@@ -146,7 +146,7 @@
       position: absolute;
       align-items: center;
       height: auto;
-      width: 35%;
+      width: 25%;
       max-width: 280px;
       top: 65%;
       left: 50%;
@@ -165,7 +165,7 @@
       position: absolute;
       width: auto;
       top: 60%;
-      left: 10%;
+      left: 18%;
       height: 20%;
       max-width: 20%;
     }
@@ -174,7 +174,7 @@
       position: absolute;
       width: auto;
       top: 60%;
-      left: 73%;
+      left: 70%;
       height: 20%;
       max-width: 20%;
     }
@@ -186,7 +186,7 @@
       transform: translate(-50%, -50%);
       max-width: 60%;
     }
-} */
+}
 @media screen and (max-width: 768px){
   .loginbut {
   z-index: 1;
@@ -257,7 +257,7 @@
     max-width: 60%;
   }
 }
-@media screen and (max-width: 430px){
+@media screen and (max-width: 500px){
     .loginbut {
     z-index: 1;
     position: absolute;
@@ -316,7 +316,7 @@
       top: 62%;
       left: 74%;
       height: 18%;
-      max-width: 20%;
+      max-width: 24%;
     }
     .PCtt {
       z-index: 1;
