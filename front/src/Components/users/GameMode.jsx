@@ -47,9 +47,9 @@ function GameMode() {
       <img className="dogrun" src={dogrun} alt="dogrun"></img>
       <img className="ballooncat" src={ballooncat} alt="ballooncat"></img>
 
-      <img className="dirt1" src={dirt} alt="Login Board"></img>
-      <img className="dirt2" src={dirt} alt="Login Board"></img>
-      <img className="dirt3" src={dirt} alt="Login Board"></img>
+      <img className="dirt1" src={dirt} alt="dirt"></img>
+      <img className="dirt2" src={dirt} alt="dirt"></img>
+      <img className="dirt3" src={dirt} alt="dirt"></img>
 
       <button className="threebut" onClick={handleFourthtable}>
         <img src={threebut} alt="3x3 button" className="button-img"></img>

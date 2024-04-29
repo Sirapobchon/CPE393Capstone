@@ -9,6 +9,7 @@ import logoutbut from "../Assets/element/loguot.png";
 import rbcat from "../Assets/element/rbcat.gif";
 import rbhotdog from "../Assets/element/rbhotdog.gif";
 import dirt from "../Assets/element/dirt.png";
+import hellott from "../Assets/element/hello.png";
 
 function MainGame() {
   const navigate = useNavigate();
@@ -22,11 +23,10 @@ function MainGame() {
     navigate("/Character");
   };
   const handleLogout = () => {
-    localStorage.removeItem('username'); // Clear username from storage
+    localStorage.removeItem("username"); // Clear username from storage
     localStorage.removeItem("isLoggedIn");
-    window.location.href = '/login';
+    window.location.href = "/login";
   };
-  
 
   return (
     <div className="MainGamepage">
@@ -51,6 +51,8 @@ function MainGame() {
       <button className="logoutbut" onClick={handleLogout}>
         <img src={logoutbut} alt="Logout Button" className="button-img"></img>
       </button>
+      <img className="hellott" src={hellott} alt="hellott"></img>
+
       <img className="rbcat" src={rbcat} alt="rbcat"></img>
       <img className="rbhotdog" src={rbhotdog} alt="rbhotdog"></img>
 
