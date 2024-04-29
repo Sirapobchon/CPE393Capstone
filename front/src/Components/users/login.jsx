@@ -60,7 +60,7 @@ export default function Login() {
     clickaudio.play();
   };
   const handleBack = () => {
-    navigate("/home");
+    navigate("/");
     clickaudio.play();
   };
   return (

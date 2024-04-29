@@ -82,7 +82,7 @@ function Register() {
   };
   const handleBack = () => {
     clickaudio.play();
-    navigate("/home");
+    navigate("/");
   };
   //   const handleMediaQueryChange = (matches) => {
   //     // Handle media query change here
