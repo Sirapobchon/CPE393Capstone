@@ -117,3 +117,218 @@
 .button-img:hover {
   transform: scale(1.1);
 }
+/* @media screen and (max-width: 1600px) and (min-width:900px){
+  .loginbut {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 35%;
+    max-width: 280px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      
+    }
+    .Leaderbut1 {
+      z-index: 1;
+      position: absolute;
+      align-items: center;
+      height: auto;
+      width: 35%;
+      max-width: 280px;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .HowTobut {
+      z-index: 1;
+      position: absolute;
+      align-items: center;
+      height: auto;
+      width: 35%;
+      max-width: 280px;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .AnimationBg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+    .dog {
+      z-index: 1;
+      position: absolute;
+      width: auto;
+      top: 60%;
+      left: 10%;
+      height: 20%;
+      max-width: 20%;
+    }
+    .cat {
+      z-index: 1;
+      position: absolute;
+      width: auto;
+      top: 60%;
+      left: 73%;
+      height: 20%;
+      max-width: 20%;
+    }
+    .PCtt {
+      z-index: 1;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 60%;
+    }
+} */
+@media screen and (max-width: 768px){
+  .loginbut {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 35%;
+  max-width: 280px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
+  }
+  .Leaderbut1 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 35%;
+    max-width: 280px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .HowTobut {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 35%;
+    max-width: 280px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .AnimationBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  .dog {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    top: 60%;
+    left: 10%;
+    height: 20%;
+    max-width: 20%;
+  }
+  .cat {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    top: 60%;
+    left: 73%;
+    height: 20%;
+    max-width: 20%;
+  }
+  .PCtt {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 430px){
+    .loginbut {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    max-width: 280px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      
+    }
+    .Leaderbut1 {
+      z-index: 1;
+      position: absolute;
+      align-items: center;
+      height: auto;
+      width: 40%;
+      max-width: 280px;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .HowTobut {
+      z-index: 1;
+      position: absolute;
+      align-items: center;
+      height: auto;
+      width: 40%;
+      max-width: 280px;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .AnimationBg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+    .dog {
+      z-index: 1;
+      position: absolute;
+      width: auto;
+      top: 63%;
+      left: 9%;
+      height: 17%;
+      max-width: 17%;
+    }
+    .cat {
+      z-index: 1;
+      position: absolute;
+      width: auto;
+      top: 62%;
+      left: 74%;
+      height: 18%;
+      max-width: 20%;
+    }
+    .PCtt {
+      z-index: 1;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 65%;
+    }
+
+
+
+}
+  
+
