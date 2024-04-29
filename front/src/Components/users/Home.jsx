@@ -9,6 +9,8 @@ import clicksound from "../SFX/interface-button.mp3";
 import cat from "../Assets/element/cat.png";
 import dog from "../Assets/element/dog.png";
 import dirt from "../Assets/element/dirt.png";
+import menu from "../Assets/element/menu1.png";
+
 import PCtt from "../Assets/element/P&Cicon.png";
 import MainGame from "./MainGame";
 
@@ -36,7 +38,7 @@ function Home() {
     <div className="Homepage">
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <button className="loginbut" onClick={handleMainGame}>
-        <img src={loginbut} alt="Login Button" className="button-img" />
+        <img src={menu} alt="Login Button" className="button-img" />
       </button>
       <button className="Leaderbut1" onClick={handleLeader}>
         <img src={leaderbut} alt="Leaderboard Button" className="button-img" />
