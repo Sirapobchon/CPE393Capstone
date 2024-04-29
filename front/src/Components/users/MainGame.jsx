@@ -10,19 +10,25 @@ import rbcat from "../Assets/element/rbcat.gif";
 import rbhotdog from "../Assets/element/rbhotdog.gif";
 import dirt from "../Assets/element/dirt.png";
 import hellott from "../Assets/element/hello.png";
+import clicksound from "../SFX/interface-button.mp3";
+const clickaudio = new Audio(clicksound);
 
 function MainGame() {
   const navigate = useNavigate();
   const handlePlay = () => {
+    clickaudio.play();
     navigate("/GameMode");
   };
   const handleLeader = () => {
+    clickaudio.play();
     navigate("/Leaderboard");
   };
   const handleCharacter = () => {
+    clickaudio.play();
     navigate("/Character");
   };
   const handleLogout = () => {
+    clickaudio.play();
     localStorage.removeItem("username"); // Clear username from storage
     localStorage.removeItem("isLoggedIn");
     window.location.href = "/login";
