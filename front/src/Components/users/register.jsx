@@ -13,8 +13,8 @@ import signupbut from "../Assets/element/signup.png";
 import backbut from "../Assets/element/back.png";
 import dirt from "../Assets/element/dirt.png";
 import RegisterBoard from "../Assets/element/smallerthanbiggerboard.png";
-import clicksound from "../SFX/interface-button.mp3";
 
+import clicksound from "../SFX/interface-button.mp3";
 const clickaudio = new Audio(clicksound);
 
 function Register() {

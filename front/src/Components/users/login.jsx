@@ -11,10 +11,11 @@ import usrtt from "../Assets/element/username.png";
 import passtt from "../Assets/element/password.png";
 import logintt from "../Assets/logintt.png";
 import dirt from "../Assets/element/dirt.png";
-import clicksound from "../SFX/interface-button.mp3";
 import emailtt from "../Assets/element/email.png";
 
+import clicksound from "../SFX/interface-button.mp3";
 const clickaudio = new Audio(clicksound);
+
 export default function Login() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -56,12 +57,12 @@ export default function Login() {
     }
   };
   const handleRegister = () => {
-    navigate("/register");
     clickaudio.play();
+    navigate("/register");
   };
   const handleBack = () => {
-    navigate("/");
     clickaudio.play();
+    navigate("/");
   };
   return (
     <div className="LoginPage">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import BGvid from "../Assets/CloudBg.mp4";
-import loginbut from "../Assets/element/Login.png";
+import loginbut from "../Assets/element/menu.png";
 import leaderbut from "../Assets/element/Leaderboard.png";
 import howtobut from "../Assets/element/HowToPlay.png";
 import clicksound from "../SFX/interface-button.mp3";
