@@ -12,6 +12,7 @@ import passtt from "../Assets/element/password.png";
 import logintt from "../Assets/logintt.png";
 import dirt from "../Assets/element/dirt.png";
 import clicksound from "../SFX/interface-button.mp3";
+import emailtt from "../Assets/element/email.png";
 
 const clickaudio = new Audio(clicksound);
 export default function Login() {
@@ -74,7 +75,7 @@ export default function Login() {
       <body className="Body">
         <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>{" "}
         {/* background */}
-        <img className="usrtt1" src={usrtt} alt="Login Board"></img>{" "}
+        <img className="usrtt1" src={emailtt} alt="Login Board"></img>{" "}
         {/* body content */}
         <img className="passtt1" src={passtt} alt="Login Board"></img>
         <img className="LoginBoard" src={LoginBoard} alt="Login Board"></img>
@@ -83,7 +84,7 @@ export default function Login() {
             <input
               className="Textbox"
               type="text"
-              placeholder="username"
+              placeholder="email"
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
