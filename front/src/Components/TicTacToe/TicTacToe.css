@@ -75,7 +75,17 @@
     cursor: pointer
 }
 
+.PieceSizeS:hover {
+    background-color: rgb(114, 208, 104);
+    border: 4px solid white;
+}
+
+.PieceSizeM:hover {
+    background-color: rgb(236, 232, 195);
+    border: 4px solid white;
+}
+
 .PieceSizeL:hover {
-    background-color: aqua;
+    background-color: rgb(232, 106, 150);
     border: 4px solid white;
 }

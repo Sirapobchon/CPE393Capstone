@@ -47,8 +47,6 @@ const TicTacToe = () => {
       }
       return;
     }
-
-    // Place new piece (no overtaking)
     
     data[num][0] = count % 2 === 0 ? 'Dog' : 'Cat';
     data[num][1] = getSelectedSizeValue(); // Set size for the new piece
