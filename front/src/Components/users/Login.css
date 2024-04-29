@@ -192,3 +192,287 @@
 .button-img:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 1000px) and (min-width:801px){
+  
+
+.reciveUsername1 {
+    position: absolute;
+    align-items: center;
+    fill: none;
+    height: 13%;
+    width: 25%;
+    max-width: 500px;
+    top: 40%;
+    left: 60%;
+    /* width: 550px; */
+    transform: translate(-50%, -50%);
+    /* background: #ffffff; */
+    padding: 15px;
+    border-radius: 50px;
+    /* border: 3px solid black; */
+  }
+  
+.recivePassword1 {
+  position: absolute;
+  height: 13%;
+  width: 25%;
+  max-width: 500px;
+  top: 49%;
+  left: 60%;
+  /* width: 550px; */
+  transform: translate(-50%, -50%);
+  /* background: #ffffff; */
+  padding: 15px;
+  border-radius: 50px;
+  /* border: 3px solid black; */
+}
+}
+@media screen and (max-width: 800px) and (min-width:501px)
+{
+  .usrtt1 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 20%;
+    max-width: 280px;
+    top: 36%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .passtt1 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 20%;
+    max-width: 280px;
+    top: 46%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  }
+  .reciveUsername1 {
+    position: absolute;
+    align-items: center;
+    fill: none;
+    height: 1%;
+    width: 60%;
+    max-width: 500px;
+    top: 39%;
+    left: 50%;
+    /* width: 550px; */
+    transform: translate(-50%, -50%);
+    /* background: #ffffff; */
+    padding: 15px;
+    border-radius: 50px;
+    /* border: 3px solid black; */
+  }
+  .recivePassword1 {
+    position: absolute;
+    height: 1%;
+    width: 60%;
+    max-width: 500px;
+    top: 49%;
+    left: 50%;
+    /* width: 550px; */
+    transform: translate(-50%, -50%);
+    /* background: #ffffff; */
+    padding: 15px;
+    border-radius: 50px;
+    /* border: 3px solid black; */
+  }
+  
+  
+  .RegisBut1 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 27%;
+    max-width: 280px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Backbut1 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 27%;
+    max-width: 280px;
+    top: 82.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .NoAcc {
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 22%;
+    max-width: 280px;
+    max-height: 280px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .LoginBoard {
+    position: fixed;
+    align-items: center;
+    width: 1013px;
+    height: 558px;
+    max-height: 40%;
+    max-width: 65%;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logintt {
+    z-index: 1;
+    position: absolute;
+    max-width: 27%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .loginbut3 {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    width: 27%;
+    max-width: 280px;
+    top: 56.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+}
+
+
+
+@media screen and (max-width: 500px){
+.usrtt1 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 36%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.passtt1 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 46%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+.reciveUsername1 {
+  position: absolute;
+  align-items: center;
+  fill: none;
+  height: 1%;
+  width: 60%;
+  max-width: 500px;
+  top: 39%;
+  left: 50%;
+  /* width: 550px; */
+  transform: translate(-50%, -50%);
+  /* background: #ffffff; */
+  padding: 15px;
+  border-radius: 50px;
+  /* border: 3px solid black; */
+}
+.recivePassword1 {
+  position: absolute;
+  height: 1%;
+  width: 60%;
+  max-width: 500px;
+  top: 49%;
+  left: 50%;
+  /* width: 550px; */
+  transform: translate(-50%, -50%);
+  /* background: #ffffff; */
+  padding: 15px;
+  border-radius: 50px;
+  /* border: 3px solid black; */
+}
+
+
+.RegisBut1 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 35%;
+  max-width: 280px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Backbut1 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 35%;
+  max-width: 280px;
+  top: 82.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.NoAcc {
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  max-height: 280px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.LoginBoard {
+  position: fixed;
+  align-items: center;
+  width: 1013px;
+  height: 558px;
+  max-height: 37%;
+  max-width: 65%;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logintt {
+  z-index: 1;
+  position: absolute;
+  max-width: 27%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loginbut3 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 30%;
+  max-width: 280px;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  
+}
