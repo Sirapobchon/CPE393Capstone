@@ -9,6 +9,7 @@ import Home from "./Components/users/Home";
 import MainGame from "./Components/users/MainGame";
 import GameMode from "./Components/users/GameMode";
 import HowToPlay from "./Components/users/HowToPlay";
+import CharacterPage from './Components/users/Character';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Mock function to check if user is logged in
@@ -28,10 +29,11 @@ function App() {
         <Route path="/tictactoe" element={<ProtectedRoute component={TicTacToe} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/leaderboard" element={<ProtectedRoute component={Leaderboard} />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/MainGame" element={<ProtectedRoute component={MainGame} />} />
         <Route path="/GameMode" element={<ProtectedRoute component={GameMode} />} />
         <Route path="/HowToPlay" element={<HowToPlay />} />
+        <Route path="/Character" element={<ProtectedRoute component={CharacterPage} />} />
       </Routes>
     </>
   );
