@@ -2,12 +2,12 @@
     text-align: center;
 }
 .title{
-    margin-top: 50px;
-    color: royalblue;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
+    position: fixed;
+    max-width: 25%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .title span{
     color: darkgoldenrod;
@@ -32,16 +32,20 @@
     cursor: pointer
 }
 .board{
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     display: flex;
     margin: auto;
+    position: relative;
+    top: 220px;
 }
 .Size{
     height: 100px;
     width: 150px;
     display: flex;
     margin: auto;
+    position: relative;
+    top:300px;
 }
 .PieceSizeS{
     display: flex;

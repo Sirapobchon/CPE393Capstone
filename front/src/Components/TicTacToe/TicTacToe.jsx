@@ -4,6 +4,7 @@ import dog_icon from '../Assets/dog.png'
 import cat_icon from '../Assets/cat.jpg'
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from "../Assets/element/resetbutt.png";
+import header from "../Assets/element/3x3banner.png";
 
 
 
@@ -113,9 +114,8 @@ const TicTacToe = () => {
 
   return (
     <div>
-      <div className='tic-container'>
+      <img className="title" src={header} alt="Login header"></img>
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
-      <h1 className="title">PawClaw <span>XO</span></h1>
       <div className='board'>
         <div className="row1">
           <div className="boxes" onClick={(e) => { toggle(e, 0) }}></div>
@@ -147,7 +147,7 @@ const TicTacToe = () => {
       </div>
     
   
-    </div>
+    
   );
 }
 export default TicTacToe
