@@ -50,6 +50,7 @@ function Character() {
   };
 
   const handleEditToggle = () => {
+    clickaudio.play();
     setEditable(prevEditable => !prevEditable);
   };
 
@@ -137,10 +138,9 @@ function Character() {
 
       {/* Footer */}
       <footer className="Footer">
-        <img className="dirt1" src={dirt} alt="Login Board"></img>{" "}
-        {/* footer content */}
-        <img className="dirt2" src={dirt} alt="Login Board"></img>
-        <img className="dirt3" src={dirt} alt="Login Board"></img>
+        <img className="dirt1" src={dirt} alt="Dirt"></img>
+        <img className="dirt2" src={dirt} alt="Dirt"></img>
+        <img className="dirt3" src={dirt} alt="Dirt"></img>
       </footer>
     </div>
   );
