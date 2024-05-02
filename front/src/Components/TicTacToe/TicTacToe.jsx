@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import './TicTacToe.css'
 import dog_icon from '../Assets/dog.png'
 import cat_icon from '../Assets/cat.jpg'
+import BGvid from "../Assets/CloudBg.mp4";
+import resetbutton from "../Assets/element/resetbutt.png";
+
+
 
 let data = [
   ["", 1],
@@ -108,7 +112,9 @@ const TicTacToe = () => {
   };
 
   return (
-    <div className='tic-container'>
+    <div>
+      <div className='tic-container'>
+      <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <h1 className="title">PawClaw <span>XO</span></h1>
       <div className='board'>
         <div className="row1">
@@ -135,7 +141,12 @@ const TicTacToe = () => {
       </div>
 
 
-      <button className='reset' onClick={handleReset}>Reset</button>
+      <button className='reset' onClick={handleReset}>
+        <img src={resetbutton} alt="Reset button" />
+      </button>
+      </div>
+    
+  
     </div>
   );
 }

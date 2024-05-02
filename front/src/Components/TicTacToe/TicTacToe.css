@@ -14,17 +14,13 @@
     padding-left: 15px;
 }
 .reset{
-    width: 100px;
-    height: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50px;
-    background: rgb(91, 223, 228);
-    font-size: 26px;
-    color: salmon;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    max-width: 280px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .boxes{
     display: flex;
@@ -89,3 +85,12 @@
     background-color: rgb(232, 106, 150);
     border: 4px solid white;
 }
+.header {
+    z-index: 1;
+    position: absolute;
+    max-width: 25%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
