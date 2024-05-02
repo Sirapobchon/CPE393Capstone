@@ -79,13 +79,19 @@ const TicTacToe = () => {
       const [playerB, sizeB] = data[b];
       const [playerC, sizeC] = data[c];
 
-      if (playerA && playerA === playerB && playerA === playerC &&
-        (sizeA === sizeB && sizeB === sizeC ||
+      if (
+        playerA &&
+        playerA === playerB &&
+        playerA === playerC &&
+        (
+          (sizeA === sizeB && sizeB === sizeC) ||
           (sizeA >= sizeB && sizeA >= sizeC) ||
           (sizeB >= sizeA && sizeB >= sizeC) ||
-          (sizeC >= sizeA && sizeC >= sizeB))) {
+          (sizeC >= sizeA && sizeC >= sizeB)
+        )
+      ) {
         return playerA;
-      }
+      }      
     }
 
     return null;
