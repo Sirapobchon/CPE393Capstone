@@ -1,65 +1,424 @@
-.page{
+.page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+.AnimationBg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Backbut1 {
+  z-index: 1;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Identify {
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 23%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+.Name {
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 23%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.Score {
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 23%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+.sort {
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 23%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+/* width: 245px;
+  height: 478px; */
+.tree {
+  z-index: 0;
+  position: absolute;
+  width: auto;
+  top: 30%;
+  left: 2%;
+  /* width: 245px;
+  height: 478px; */
+  height: 50%;
+  max-width: 40%;
+}
+.trophy {
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 86%;
+  /* width: 245px;
+  height: 478px; */
+  height: 30%;
+  max-width: 40%;
+  z-index: 1;
+  /* position: absolute;
+  width: auto;
+  top: 51%;
+  left: 86%;
+  /* height: 50%; */
+  /* width: 226.5px;
+  height: 270px;
+  max-width: 50%; */
+}
+.moutain2 {
+  z-index: -1;
+  position: absolute;
+  width: auto;
+  top: 30%;
+  left: 60%;
+  height: 50%;
+  max-width: 50%;
+}
+/* width: 978px;
+height: 584px; */
+.ldboard {
+  z-index: 0;
+  position: fixed;
+  align-items: center;
+  width: 19560px;
+  height: 11680px;
+  max-height: 70%;
+  max-width: 70%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* width: 589px;
+height: 139px; */
+.ldbanner {
+  z-index: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* width: auto; */
+  top: 12%;
+  left: 50%;
+  width: 589px;
+  height: 139px;
+  max-width: 50%;
+}
+/*   width: 151px;
+  height: 180px; */
+.dirt1 {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dirt2 {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transform: translateX(-50%);
+}
+.dirt3 {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+}
+.button-img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.button-img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .page {
     display: flex;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     margin: auto;
-}
-.AnimationBg {
+  }
+  .AnimationBg {
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     object-fit: cover;
-}
+  }
 
-.Backbut{
+  .Backbut1 {
     z-index: 1;
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+  }
 
-.Identify{
+  .Identify {
     z-index: 1;
     position: absolute;
-    top: 28%;
+    height: auto;
+    width: 5%;
+    max-width: 280px;
+    top: 23%;
     left: 22%;
     transform: translate(-50%, -50%);
-}
-.Name{
+  }
+  .Name {
     z-index: 1;
     position: absolute;
-    top: 28%;
+    height: auto;
+    width: 10%;
+    max-width: 280px;
+    top: 23%;
     left: 34%;
     transform: translate(-50%, -50%);
-}
-.Score{
+  }
+  .Score {
     z-index: 1;
     position: absolute;
-    top: 28%;
+    height: auto;
+    width: 10%;
+    max-width: 280px;
+    top: 23%;
     left: 55%;
     transform: translate(-50%, -50%);
-}
-.sort{
+  }
+  .sort {
     z-index: 1;
     position: absolute;
-    top: 28%;
+    height: auto;
+    width: 15%;
+    max-width: 280px;
+    top: 23%;
     left: 75%;
     transform: translate(-50%, -50%);
-}
-.button-img {
-    transition: filter 0.3s ease-in-out;
   }
-  
-.button-img:hover {
-    transform: scale(1.1);
+  /* width: 245px;
+    height: 478px; */
+  .tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 2%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 20%;
+  }
+  .moutain2 {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    top: 30%;
+    left: 60%;
+    height: 50%;
+    max-width: 50%;
+  }
+  /* width: 978px;
+  height: 584px; */
+  .ldboard {
+    z-index: 0;
+    position: fixed;
+    align-items: center;
+    width: 19560px;
+    height: 11680px;
+    max-height: 70%;
+    max-width: 70%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* width: 589px;
+  height: 139px; */
+  .ldbanner {
+    z-index: 0;
+    position: absolute;
+    align-items: center;
+    width: auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 589px;
+    height: 139px; */
+    /* height: auto; */
+    max-width: 50%;
+  }
+  /*   width: 151px;
+    height: 180px; */
+  .trophy {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 86%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 40%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+  }
+  .AnimationBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
   }
 
-  @media screen and (max-width:500px){
-    
-    
+  .Backbut1 {
+    z-index: 1;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Identify {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 5%;
+    max-width: 280px;
+    top: 10%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+  .Name {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 10%;
+    max-width: 280px;
+    top: 10%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+  }
+  .Score {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 10%;
+    max-width: 280px;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  .sort {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 15%;
+    max-width: 280px;
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  /* width: 245px;
+    height: 478px; */
+  .tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 2%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 30%;
+  }
+  .moutain2 {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    top: 40%;
+    left: 60%;
+    height: 40%;
+    max-width: 50%;
+  }
+  /* width: 978px;
+  height: 584px; */
+  .ldboard {
+    z-index: 0;
+    position: fixed;
+    align-items: center;
+    width: 19560px;
+    height: 11680px;
+    max-height: 70%;
+    max-width: 70%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* width: 589px;
+  height: 139px; */
+  .ldbanner {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 589px;
+    height: 139px; */
+    max-width: 50%;
+  }
+  /*   width: 151px;
+    height: 180px; */
+  .trophy {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 86%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 40%;
+    z-index: 1;
+  }
 }
