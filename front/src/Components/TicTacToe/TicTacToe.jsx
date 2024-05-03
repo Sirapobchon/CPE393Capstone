@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import './TicTacToe.css'
 import dog_icon from '../Assets/dog.png'
 import cat_icon from '../Assets/cat.jpg'
+import BGvid from "../Assets/CloudBg.mp4";
+import resetbutton from "../Assets/element/resetbutt.png";
+import header from "../Assets/element/3x3banner.png";
+
+
 
 let data = [
   ["", 1],
@@ -79,13 +84,19 @@ const TicTacToe = () => {
       const [playerB, sizeB] = data[b];
       const [playerC, sizeC] = data[c];
 
-      if (playerA && playerA === playerB && playerA === playerC &&
-        (sizeA === sizeB && sizeB === sizeC ||
+      if (
+        playerA &&
+        playerA === playerB &&
+        playerA === playerC &&
+        (
+          (sizeA === sizeB && sizeB === sizeC) ||
           (sizeA >= sizeB && sizeA >= sizeC) ||
           (sizeB >= sizeA && sizeB >= sizeC) ||
-          (sizeC >= sizeA && sizeC >= sizeB))) {
+          (sizeC >= sizeA && sizeC >= sizeB)
+        )
+      ) {
         return playerA;
-      }
+      }      
     }
 
     return null;
@@ -102,8 +113,9 @@ const TicTacToe = () => {
   };
 
   return (
-    <div className='tic-container'>
-      <h1 className="title">PawClaw <span>XO</span></h1>
+    <div>
+      <img className="title" src={header} alt="Login header"></img>
+      <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <div className='board'>
         <div className="row1">
           <div className="boxes" onClick={(e) => { toggle(e, 0) }}></div>
@@ -129,8 +141,13 @@ const TicTacToe = () => {
       </div>
 
 
-      <button className='reset' onClick={handleReset}>Reset</button>
-    </div>
+      <button className='reset' onClick={handleReset}>
+        <img src={resetbutton} alt="Reset button" />
+      </button>
+      </div>
+    
+  
+    
   );
 }
 export default TicTacToe
