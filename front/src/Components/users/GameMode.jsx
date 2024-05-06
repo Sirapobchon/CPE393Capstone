@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./GameMode.css";
 import BGvid from "../Assets/CloudBg.mp4";
-import fourthbut from "../Assets/element/4x4.png";
-import threebut from "../Assets/element/3x3.png";
+import fourthbut from "../Assets/element/ai.png";
+import threebut from "../Assets/element/local.png";
 import backbut from "../Assets/element/back.png";
 import gamemodett from "../Assets/element/gamemodett.png";
 import dirt from "../Assets/element/dirt.png";
@@ -18,12 +18,12 @@ import TicTacToe from "../TicTacToe/TicTacToe";
 const clickaudio = new Audio(clicksound);
 function GameMode() {
   const navigate = useNavigate();
-  const handleFourthtable = () => {
-    navigate("/ticTacToe"); //3x3Board
+  const handlelocal = () => {
+    navigate("/ticTacToe"); //Local
     clickaudio.play();
   };
-  const handleThreetable = () => {
-    navigate("/4x4Board"); //4x4Board
+  const handleAI = () => {
+    navigate("/ticTacToeAI"); //AI
     clickaudio.play();
   };
   const handleBack = () => {
@@ -51,11 +51,11 @@ function GameMode() {
       <img className="dirt2" src={dirt} alt="dirt"></img>
       <img className="dirt3" src={dirt} alt="dirt"></img>
 
-      <button className="threebut" onClick={handleFourthtable}>
-        <img src={threebut} alt="3x3 button" className="button-img"></img>
+      <button className="threebut" onClick={handlelocal}>
+        <img src={threebut} alt="local button" className="button-img"></img>
       </button>
-      <button className="fourthbut" onClick={handleThreetable}>
-        <img src={fourthbut} alt="4x4 button" className="button-img"></img>
+      <button className="fourthbut" onClick={handleAI}>
+        <img src={fourthbut} alt="AI button" className="button-img"></img>
       </button>
       <button className="BackBut2" onClick={handleBack}>
         <img src={backbut} alt="back button" className="button-img"></img>
