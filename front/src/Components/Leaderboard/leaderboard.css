@@ -416,7 +416,7 @@ height: 584px; */
     height: auto;
     width: 9%;
     max-width: 280px;
-    top: 19%;
+    top: 20%;
     left: 20%;
     transform: translate(-50%, -50%);
   }
@@ -426,7 +426,7 @@ height: 584px; */
     height: auto;
     width: 18%;
     max-width: 280px;
-    top: 19%;
+    top: 20%;
     left: 34%;
     transform: translate(-50%, -50%);
   }
@@ -436,7 +436,7 @@ height: 584px; */
     height: auto;
     width: 18%;
     max-width: 280px;
-    top: 19%;
+    top: 20%;
     left: 52.5%;
     transform: translate(-50%, -50%);
   }
@@ -446,7 +446,7 @@ height: 584px; */
     height: auto;
     width: 23%;
     max-width: 280px;
-    top: 19%;
+    top: 20%;
     left: 74%;
     transform: translate(-50%, -50%);
   }
@@ -493,12 +493,12 @@ height: 584px; */
     position: absolute;
     width: auto;
     height: auto;
-    top: 10%;
+    top: 13.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* width: 589px;
     height: 139px; */
-    max-width: 50%;
+    max-width: 53%;
   }
   /*   width: 151px;
     height: 180px; */
