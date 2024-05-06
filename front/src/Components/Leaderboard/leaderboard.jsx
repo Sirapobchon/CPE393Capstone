@@ -30,7 +30,7 @@ function Leaderboard() {
         }
         const data = await response.json();
         console.log(data);
-        setPlayers(data); // Update the players array with the fetched data
+        setPlayers(data.Leader); // Update the players array with the fetched data
       } catch (error) {
         console.error("Error fetching players:", error);
       }
@@ -67,11 +67,11 @@ function Leaderboard() {
       <button className="Backbut1" onClick={handleBack}>
         <img src={BackBut} alt="Back button" className="button-img"></img>
       </button>
-      <table>
+      
+      <table className="table">
         <thead>
           <tr>
             <th className="Identify">
-              {" "}
               <img src={id} alt="id title"></img>
             </th>
             <th className="Name">
@@ -82,19 +82,21 @@ function Leaderboard() {
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tablecontent">
           {players.length > 0 ? (
-            players.map((player) => (
-              <tr key={player.id}>
-                <td>{player.id}</td>
-                <td>{player.name}</td>
-                <td>{player.score}</td>
+            players.map((player, index) => (
+              <tr key={index}>
+                <td className="tablecontent_id">{index+1}</td>
+                <td >{player.username}</td>
+                <td>{player.winCount}</td>
               </tr>
             ))
           ) : (
-            <div className="noPlayersMessage">
-              No players to display
-            </div>
+            <tr>
+              <td colSpan="3" className="noPlayersMessage">
+                No players to display
+              </td>
+            </tr>
           )}
         </tbody>
       </table>

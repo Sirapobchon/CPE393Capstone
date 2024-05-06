@@ -78,10 +78,10 @@ module.exports = {
         })
     },
     userLeaderboard:(req, res) => {
-        User.find({}, 'username winCount')
+        User.find()
         .then((User) => {
-            const transformedLeader = Leader.map((user) => {
-                return { username: user.username, winCount: user.winCount }
+            const transformedLeader = User.map((user) => {
+                return { username: user.username, winCount: user.wincount }
             })
             return res.json({
                 success: 1,

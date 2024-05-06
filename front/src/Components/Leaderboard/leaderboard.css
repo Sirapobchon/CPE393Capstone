@@ -23,6 +23,27 @@
   transform: translate(-50%, -50%);
 }
 
+.table {
+  z-index: 0;
+  position: fixed;
+  align-items: center;
+  width: 19560px;
+  height: 11680px;
+  max-height: 70%;
+  max-width: 70%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tablecontent {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  transform: translate(50%, 50%);
+}
+
 .Identify {
   z-index: 1;
   position: absolute;
