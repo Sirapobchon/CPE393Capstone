@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Character.css';
+import './Profile.css';
 import BGvid from "../Assets/CloudBg.mp4";
 
 import dirt from '../Assets/element/dirt.png';
@@ -14,7 +14,7 @@ import Savebut from "../Assets/element/savebutton.png";
 import clicksound from "../SFX/interface-button.mp3";
 const clickaudio = new Audio(clicksound);
 
-function Character() {
+function Profile() {
   const navigate = useNavigate();
   const [userData, setUserData] = useState({
     username: '',
@@ -82,7 +82,7 @@ function Character() {
   };
 
   return (
-    <div className="CharacterPage">
+    <div className="ProfilePage">
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <body className="Body">
         <div>
@@ -146,4 +146,4 @@ function Character() {
   );
 }
 
-export default Character;
+export default Profile;
