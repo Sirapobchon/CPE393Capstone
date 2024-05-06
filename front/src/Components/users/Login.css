@@ -257,9 +257,9 @@
     align-items: center;
     fill: none;
     height: 1%;
-    width: 60%;
+    width: 44%;
     max-width: 500px;
-    top: 39%;
+    top: 40.5%;
     left: 50%;
     /* width: 550px; */
     transform: translate(-50%, -50%);
@@ -271,9 +271,9 @@
   .recivePassword1 {
     position: absolute;
     height: 1%;
-    width: 60%;
+    width: 44%;
     max-width: 500px;
-    top: 49%;
+    top: 49.5%;
     left: 50%;
     /* width: 550px; */
     transform: translate(-50%, -50%);
@@ -343,7 +343,7 @@
     height: auto;
     width: 27%;
     max-width: 280px;
-    top: 56.5%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -382,9 +382,9 @@
   align-items: center;
   fill: none;
   height: 1%;
-  width: 60%;
+  width: 43%;
   max-width: 500px;
-  top: 39%;
+  top: 40.5%;
   left: 50%;
   /* width: 550px; */
   transform: translate(-50%, -50%);
@@ -396,9 +396,9 @@
 .recivePassword1 {
   position: absolute;
   height: 1%;
-  width: 60%;
+  width: 43%;
   max-width: 500px;
-  top: 49%;
+  top: 49.5%;
   left: 50%;
   /* width: 550px; */
   transform: translate(-50%, -50%);
@@ -468,7 +468,7 @@
   height: auto;
   width: 30%;
   max-width: 280px;
-  top: 56%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
