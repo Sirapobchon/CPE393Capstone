@@ -11,6 +11,8 @@ import rbhotdog from "../Assets/element/rbhotdog.gif";
 import dirt from "../Assets/element/dirt.png";
 import hellott from "../Assets/element/hello.png";
 import clicksound from "../SFX/interface-button.mp3";
+import profile from "../Assets/element/profile.png";
+
 const clickaudio = new Audio(clicksound);
 
 function MainGame() {
@@ -49,8 +51,8 @@ function MainGame() {
       </button>
       <button className="Characterbut" onClick={handleCharacter}>
         <img
-          src={characterbut}
-          alt="Character Button"
+          src={profile}
+          alt="profile Button"
           className="button-img"
         ></img>
       </button>
