@@ -237,7 +237,7 @@
     width: 20%;
     max-width: 280px;
     top: 36%;
-    left: 32%;
+    left: 39%;
     transform: translate(-50%, -50%);
   }
   
@@ -249,7 +249,7 @@
     width: 20%;
     max-width: 280px;
     top: 46%;
-    left: 32%;
+    left: 39%;
     transform: translate(-50%, -50%);
   }
   .reciveUsername1 {
@@ -259,7 +259,7 @@
     height: 1%;
     width: 44%;
     max-width: 500px;
-    top: 40.5%;
+    top: 39%;
     left: 50%;
     /* width: 550px; */
     transform: translate(-50%, -50%);
@@ -362,7 +362,7 @@
   width: 20%;
   max-width: 280px;
   top: 36%;
-  left: 32%;
+  left: 39%;
   transform: translate(-50%, -50%);
 }
 
@@ -373,8 +373,8 @@
   height: auto;
   width: 20%;
   max-width: 280px;
-  top: 46%;
-  left: 32%;
+  top: 45%;
+  left: 39%;
   transform: translate(-50%, -50%);
 }
 .reciveUsername1 {
@@ -384,7 +384,7 @@
   height: 1%;
   width: 43%;
   max-width: 500px;
-  top: 40.5%;
+  top: 38.5%;
   left: 50%;
   /* width: 550px; */
   transform: translate(-50%, -50%);
@@ -398,7 +398,7 @@
   height: 1%;
   width: 43%;
   max-width: 500px;
-  top: 49.5%;
+  top: 47.5%;
   left: 50%;
   /* width: 550px; */
   transform: translate(-50%, -50%);
@@ -468,7 +468,7 @@
   height: auto;
   width: 30%;
   max-width: 280px;
-  top: 58%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
