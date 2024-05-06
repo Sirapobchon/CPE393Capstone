@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './TicTacToe.css'
-import dog_icon from '../Assets/dog.png'
-import cat_icon from '../Assets/cat.jpg'
+import dog_icon from '../Assets/element/p&c/BigDog.png'
+import cat_icon from '../Assets/element/p&c/BigCat.png'
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from "../Assets/element/resetbutt.png";
 import header from "../Assets/element/3x3banner.png";
@@ -55,7 +55,7 @@ const TicTacToe = () => {
     
     data[num][0] = count % 2 === 0 ? 'Dog' : 'Cat';
     data[num][1] = getSelectedSizeValue(); // Set size for the new piece
-    e.target.innerHTML = `<img src='${data[num][0] === 'Dog' ? dog_icon : cat_icon}' style="width: ${data[num][1] * 50}px">`;
+    e.target.innerHTML = `<img src='${data[num][0] === 'Dog' ? dog_icon : cat_icon}' style="width: ${data[num][1] * 40}px">`;
     setCount(count + 1);
 
     // Check for a winner
