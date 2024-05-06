@@ -27,7 +27,7 @@ function MainGame() {
   };
   const handleCharacter = () => {
     clickaudio.play();
-    navigate("/Character");
+    navigate("/Profile");
   };
   const handleLogout = () => {
     clickaudio.play();
