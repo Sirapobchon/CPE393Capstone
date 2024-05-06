@@ -331,8 +331,32 @@
   transform: translate(-50%, -50%);
 }
 
+.EditButton{
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 600px)
+
+.Backbut {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  top: 73%;
+  left: 50%;
+}
+
+}
+@media screen and (max-width: 500px)
 {
 .loginbut2 {
   z-index: 1;
@@ -378,6 +402,113 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.EditButton{
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 27%;
+  max-width: 280px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Backbut {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  height: auto;
+  width: 27%;
+  max-width: 280px;
+  top: 73%;
+  left: 50%;
+}
+
+.usrtt {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  top: 33%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+.emailtt {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  top: 42%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+
+.passtt {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  width: 25%;
+  max-width: 280px;
+  top: 51%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+
+.reciveEmail {
+  position: absolute;
+  align-items: center;
+  /* max-height: 15%; */
+  /* min-width: 100px; */
+  height: 1%;
+  width: 50%;
+  max-width: 500px;
+  fill: none;
+  top: 36%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  /* background: #f60909; */
+  padding: 0px;
+  border-radius: 50px;
+  /* border: 3px solid black; */
+}
+
+.reciveUsername {
+  position: absolute;
+  fill: none;
+  height: 1%;
+  width: 50%;
+  max-width: 500px;
+  top: 45%;
+  left: 49%;
+  /* width: 500px; */
+  transform: translate(-50%, -50%);
+  /* background: #ffffff; */
+  padding: 0px;
+  border-radius: 50px;
+  /* border: 3px solid black; */
+}
+
+.recivePassword {
+  position: absolute;
+  height: 1%;
+  width: 50%;
+  max-width: 500px;
+  top: 54%;
+  left: 49%;
+  /* width: 500px; */
+  transform: translate(-50%, -50%);
+  /* background: #ffffff; */
+  padding: 0px;
+  border-radius: 50px;
+  /* border: 3px solid rgb(0, 0, 0); */
 }
 
 }
