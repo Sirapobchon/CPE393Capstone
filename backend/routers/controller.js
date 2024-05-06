@@ -1,4 +1,4 @@
-const User = require('../models/database');
+const {User, Leader, Game, Game_mode} = require('../models/database');
 //const Leader = require('../models/database');
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
@@ -80,8 +80,8 @@ module.exports = {
     userLeaderboard:(req, res) => {
         User.find()
         .then((User) => {
-            const transformedLeader = User.map((user) => {
-                return { username: user.username, winCount: user.wincount }
+            const transformedLeader = User.map((User) => {
+                return { username: User.username, winCount: User.wincount }
             })
             return res.json({
                 success: 1,

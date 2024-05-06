@@ -6,7 +6,8 @@ import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from "../Assets/element/resetbutt.png";
 import header from "../Assets/element/3x3banner.png";
 
-
+import clicksound from "../SFX/interface-button.mp3";
+const clickaudio = new Audio(clicksound);
 
 let data = [
   ["", 1],
@@ -29,6 +30,7 @@ const TicTacToe = () => {
   // const [remainingLPieces, setRemainingLPieces] = useState(2);
 
   const handleReset = (e) => {
+    clickaudio.play();
     e.preventDefault();
     window.location.reload();
   }
