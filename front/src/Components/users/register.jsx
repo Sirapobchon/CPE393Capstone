@@ -51,6 +51,7 @@ function Register() {
         username: username,
         email: email,
         password: password,
+        wincount: 0,
       });
 
       const requestOptions = {

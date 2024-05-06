@@ -23,13 +23,21 @@ function Leaderboard() {
   useEffect(() => {
     // Fetch data from ours backend server
     async function fetchData() {
-      await fetch("http://localhost:8080/api/users/leader")
-        .then((response) => response.json())
-        .then((data) => setPlayers(data)) //I don't think this is working @Sirapobchon
-        .catch((error) => console.error("Error fetching players:", error));
+      try {
+        const response = await fetch("http://localhost:8080/api/users/leader");
+        if (!response.ok) {
+          throw new Error("Failed to fetch players");
+        }
+        const data = await response.json();
+        console.log(data);
+        setPlayers(data); // Update the players array with the fetched data
+      } catch (error) {
+        console.error("Error fetching players:", error);
+      }
     }
     fetchData();
   }, []); // Empty dependency array ensures this effect runs once when the component mounts
+
 
   const navigate = useNavigate();
   // Function to sort players by score
@@ -75,13 +83,19 @@ function Leaderboard() {
           </tr>
         </thead>
         <tbody>
-          {players.map((player) => (
-            <tr key={player.id}>
-              <td>{player.id}</td>
-              <td>{player.name}</td>
-              <td>{player.score}</td>
-            </tr>
-          ))}
+          {players.length > 0 ? (
+            players.map((player) => (
+              <tr key={player.id}>
+                <td>{player.id}</td>
+                <td>{player.name}</td>
+                <td>{player.score}</td>
+              </tr>
+            ))
+          ) : (
+            <div className="noPlayersMessage">
+              No players to display
+            </div>
+          )}
         </tbody>
       </table>
 

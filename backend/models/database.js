@@ -5,7 +5,8 @@ const bcrypt = require('bcrypt');
 const UserSchema = new Schema({
     username: String,
     email: String,
-    password: String
+    password: String,
+	wincount : Number
 })
 const leaderSchema = new Schema({
     game_id: String,
@@ -32,7 +33,7 @@ const Game_modeSchema = new Schema({
 })
 
 const User = mongoose.model('profiles', UserSchema);
-const leader = mongoose.model('leaderboard', leaderSchema);
-const game = mongoose.model('game',GameSchema );
+const Leader = mongoose.model('leaderboard', leaderSchema);
+const Game = mongoose.model('game',GameSchema );
 const Game_mode = mongoose.model('game_mode',Game_modeSchema );
-module.exports = User,leader, game, Game_mode;
+module.exports = User, Leader, Game, Game_mode;
