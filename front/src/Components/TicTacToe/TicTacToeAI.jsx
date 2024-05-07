@@ -166,10 +166,13 @@ const TicTacToeAI = () => {
       const username = localStorage.getItem('username'); // Assuming username is stored in local storage
       console.log('Dog won', username);
       // Call the putLeaderboard endpoint to increment win count
-      fetch('http://localhost:8080/api/users/addleader', {
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      
+      fetch("http://localhost:8080/api/users/addleader", {
         method: "PUT",
-        headers: new Headers(),
-        body: JSON.stringify({ email: username }),
+        headers: myHeaders,
+        body: JSON.stringify({ "username" : username }),
         redirect: "follow",
       })
         .then((response) => response.json())
