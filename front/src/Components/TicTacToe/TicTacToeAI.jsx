@@ -163,26 +163,27 @@ const TicTacToeAI = () => {
   
   const winnerleaderupadate = (playerA) => {
     if (playerA === 'Dog') {
-          const username = localStorage.getItem('username'); // Assuming username is stored in local storage
-          console.log('Dog won', username);
-          // Call the putLeaderboard endpoint to increment win count
-          fetch('http://localhost:8080/api/users/addleader', {
-            method: 'PUT',
-            headers: new Headers(),
-            body: JSON.stringify({ email: username }),
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              if (data.success === 1) {
-                console.log('Win count incremented successfully');
-              } else {
-                console.error('Failed to increment win count:', data.message);
-              }
-            })
-            .catch((error) => {
-              console.error('Error updating win count:', error);
-            });
-        }
+      const username = localStorage.getItem('username'); // Assuming username is stored in local storage
+      console.log('Dog won', username);
+      // Call the putLeaderboard endpoint to increment win count
+      fetch('http://localhost:8080/api/users/addleader', {
+        method: "PUT",
+        headers: new Headers(),
+        body: JSON.stringify({ email: username }),
+        redirect: "follow",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success === 1) {
+            console.log('Win count incremented successfully');
+          } else {
+            console.error('Failed to increment win count:', data.message);
+          }
+        })
+        .catch((error) => {
+          console.error('Error updating win count:', error);
+        });
+    }
   }
 
 
