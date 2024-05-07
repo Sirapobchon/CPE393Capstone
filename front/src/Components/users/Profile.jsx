@@ -21,7 +21,8 @@ function Profile() {
     email: '',
     password: ''
   });
-
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [editable, setEditable] = useState(false);
 
   useEffect(() => {
@@ -30,25 +31,30 @@ function Profile() {
 
   const fetchUserData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/users/');
+      const username = localStorage.getItem('username'); // Get the username from localStorage
+      const response = await fetch(`http://localhost:8080/api/users/getuser?username=${username}`);
       if (!response.ok) {
         throw new Error('Failed to fetch user data');
       }
       const data = await response.json();
       setUserData(data);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching user data:', error);
+      setError('Failed to fetch user data');
+      setLoading(false);
     }
   };
+  
 
   const handleChange = e => {
     const { name, value } = e.target;
-    setUserData(prevUserData => ({
-      ...prevUserData,
+    setUserData({
+      ...userData,
       [name]: value
-    }));
+    });
   };
-
+  
   const handleEditToggle = () => {
     clickaudio.play();
     setEditable(prevEditable => !prevEditable);
@@ -86,53 +92,64 @@ function Profile() {
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <body className="Body">
         <div>
-        <img className="usrtt" src={usrtt} alt="Username"></img>
-        <img className="emailtt" src={emailtt} alt="Email"></img>
-        <img className="passtt" src={passtt} alt="Password"></img>
-          <div className="reciveUsername">
-            <input
-              className="Textbox"
-              type="text"
-              placeholder="Username"
-              name="username"
-              value={userData.username}
-              onChange={handleChange}
-              readOnly={!editable} // Toggle read-only based on editable state
-            />
-          </div>
-          <div className="reciveEmail">
-            <input
-              className="Textbox"
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={userData.email}
-              onChange={handleChange}
-              readOnly={!editable} // Toggle read-only based on editable state
-            />
-          </div>
-          <div className="recivePassword">
-            <input
-              className="Textbox"
-              type="password"
-              placeholder="Password"
-              name="password"
-              value={userData.password}
-              onChange={handleChange}
-              readOnly={!editable} // Toggle read-only based on editable state
-            />
-          </div>
+          <img className="usrtt" src={usrtt} alt="Username"></img>
+          <img className="emailtt" src={emailtt} alt="Email"></img>
+          <img className="passtt" src={passtt} alt="Password"></img>
+          {loading ? (
+            <div>Loading...</div>
+          ) : error ? (
+            <div>Error: {error}</div>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <div className="reciveUsername">
+                <input
+                  className="Textbox"
+                  type="text"
+                  placeholder="Username"
+                  name="username"
+                  value={userData.username}
+                  onChange={handleChange}
+                  readOnly={!editable}
+                  required
+                />
+              </div>
+              <div className="reciveEmail">
+                <input
+                  className="Textbox"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  value={userData.email}
+                  onChange={handleChange}
+                  readOnly={!editable}
+                  required
+                />
+              </div>
+              <div className="recivePassword">
+                <input
+                  className="Textbox"
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  value={userData.password}
+                  onChange={handleChange}
+                  readOnly={!editable}
+                  required
+                />
+              </div>
 
-          <button className="EditButton" onClick={handleEditToggle}>
-            {editable ?  
-              <img src={Editbut} alt="Edit button" className="button-img"></img>
-              : 
-              <img src={Savebut} alt="Save button" className="button-img"></img>
-            }
-          </button>
-          <button className="Backbut" onClick={handleBack}>
-            <img src={BackBut} alt="Back button" className="button-img"></img>
-          </button>
+              <button className="EditButton" onClick={handleEditToggle}>
+                {editable ?  
+                  <img src={Editbut} alt="Edit button" className="button-img"></img>
+                  : 
+                  <img src={Savebut} alt="Save button" className="button-img"></img>
+                }
+              </button>
+              <button className="Backbut" onClick={handleBack}>
+                <img src={BackBut} alt="Back button" className="button-img"></img>
+              </button>
+            </form>
+          )}
         </div>
       </body>
 

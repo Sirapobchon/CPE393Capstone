@@ -42,13 +42,20 @@ module.exports = {
         })
     },
     getUsers: (req, res) => {
-        User.find().then((users) => {
-            return res.json({
-                success: 1,
-                users: users
-            })
-        })
-    },
+        const { username } = req.query; // Extract the username from the query parameters
+        User.findOne({ username }) // Find the user by username
+          .then((user) => {
+            if (!user) {
+              return res.status(404).json({ success: 0, message: 'User not found' });
+            }
+            return res.json({ success: 1, user });
+          })
+          .catch((error) => {
+            console.error('Error fetching user data:', error);
+            return res.status(500).json({ success: 0, message: 'Failed to fetch user data' });
+          });
+      },
+      
     userLogin:(req, res) => {
         const { email, password } = req.body;
         User.findOne({ email:email})
@@ -86,6 +93,19 @@ module.exports = {
             return res.json({
                 success: 1,
                 Leader: transformedLeader
+            })
+        })
+    },
+    userEdit:(req, res) => {
+        const body = req.body;
+        User.updateOne({ _id: body._id }, {
+            $set: {
+                username: body.username,
+                email: body.email
+            }
+        }).then(() => {
+            return res.json({
+                success: 1,
             })
         })
     }

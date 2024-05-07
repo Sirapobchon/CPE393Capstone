@@ -15,52 +15,6 @@
     height: 100%;
     object-fit: cover;
   }
-  
-  .usrtt {
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    height: auto;
-    width: 20%;
-    max-width: 280px;
-    top: 33%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-  }
-  .emailtt {
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    height: auto;
-    width: 20%;
-    max-width: 280px;
-    top: 42%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .passtt {
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    height: auto;
-    width: 20%;
-    max-width: 280px;
-    top: 51%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-  }
-  .cfpasstt {
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    height: auto;
-    width: 20%;
-    max-width: 280px;
-    top: 60%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-  }
 
   .reciveEmail {
     position: absolute;
