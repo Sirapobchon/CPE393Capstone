@@ -184,12 +184,11 @@ height: 139px; */
 }
 
 .tablecontent {
-  left:-30%;
-  top: 4%;
+  left: -30%;
+  top: 20%;
 }
 
 div.leaderuser {
-  
   font-family: "VT323", monospace;
   font-weight: 500;
   font-style: normal;
@@ -206,18 +205,15 @@ table td.tablecontent_id {
   font-size: 24px;
 }
 
-table td.leadscore  {
-  
+table td.leadscore {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
   text-indent: 190px;
-  padding:0;
-  margin:0;
-  
+  padding: 0;
+  margin: 0;
 }
-
 
 /*
 
@@ -244,20 +240,11 @@ table {
 }
 
 */
-* { 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-   box-sizing: border-box; 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
 
 .noPlayersMessage {
   position: fixed; /* Position relative to the viewport */
@@ -270,9 +257,8 @@ table {
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
 }
-@media screen and (max-width: 1700px) and (min-width : 1401px) {
+@media screen and (max-width: 1700px) and (min-width: 1401px) {
   div.leaderuser {
-    
     font-family: "VT323", monospace;
     font-weight: 500;
     font-style: normal;
@@ -289,22 +275,18 @@ table {
     font-size: 24px;
   }
 
-  table td.leadscore  {
-    
+  table td.leadscore {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
     text-indent: 140px;
-    padding:0;
-    margin:0;
-    
+    padding: 0;
+    margin: 0;
   }
-
 }
 
-@media screen and (max-width: 1400px) and (min-width : 1301px) {
-
+@media screen and (max-width: 1400px) and (min-width: 1301px) {
   .Identify {
     z-index: 1;
     position: absolute;
@@ -342,7 +324,7 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   table td.tablecontent_id {
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -351,7 +333,6 @@ table {
     font-size: 24px;
   }
   div.leaderuser {
-    
     font-family: "VT323", monospace;
     font-weight: 500;
     font-style: normal;
@@ -360,16 +341,14 @@ table {
     padding: 0;
     margin: 0;
   }
-  table td.leadscore  {
-    
+  table td.leadscore {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
     text-indent: 130px;
-    padding:0;
-    margin:0;
-    
+    padding: 0;
+    margin: 0;
   }
   .tree {
     z-index: 0;
@@ -401,23 +380,19 @@ table {
     height: 270px;
     max-width: 50%; */
   }
-
-
 }
 
-@media screen and (max-width: 1300px) and (min-width : 1000px) {
-
-  
-.Identify {
-  z-index: 1;
-  position: absolute;
-  height: auto;
-  width: 20%;
-  max-width: 280px;
-  top: 23%;
-  left: 18%;
-  transform: translate(-50%, -50%);
-}
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+  .Identify {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 20%;
+    max-width: 280px;
+    top: 23%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+  }
   .Name {
     z-index: 1;
     position: absolute;
@@ -448,7 +423,7 @@ table {
     left: 73%;
     transform: translate(-50%, -50%);
   }
-  
+
   .trophy {
     position: absolute;
     width: auto;
@@ -456,11 +431,11 @@ table {
     left: 78%;
     /* width: 245px;
     height: 478px; */
-    height: 28.5%; /*-5% */ 
+    height: 28.5%; /*-5% */
     max-width: 38%;
     z-index: 1;
-
-  }.tree {
+  }
+  .tree {
     z-index: 0;
     position: absolute;
     width: auto;
@@ -471,7 +446,7 @@ table {
     height: 45.125%; /*-5% and then 5% more */
     max-width: 36.1%;
   }
-  
+
   table td.tablecontent_id {
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -480,7 +455,6 @@ table {
     font-size: 24px;
   }
   div.leaderuser {
-    
     font-family: "VT323", monospace;
     font-weight: 500;
     font-style: normal;
@@ -489,21 +463,17 @@ table {
     padding: 0;
     margin: 0;
   }
-  table td.leadscore  {
-    
+  table td.leadscore {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
     text-indent: 160px;
-    padding:0;
-    margin:0;
-    
+    padding: 0;
+    margin: 0;
   }
 }
-@media screen and (max-width: 999px) and (min-width : 851px) {
-
-  
+@media screen and (max-width: 999px) and (min-width: 851px) {
   .Identify {
     z-index: 1;
     position: absolute;
@@ -544,7 +514,7 @@ table {
     left: 68.5%;
     transform: translate(-50%, -50%);
   }
-  
+
   .trophy {
     position: absolute;
     width: auto;
@@ -555,7 +525,6 @@ table {
     height: 25.65%; /* -5%*/
     max-width: 34.2%;
     z-index: 1;
-
   }
   .tree {
     z-index: 0;
@@ -568,8 +537,7 @@ table {
     height: 42.75%; /*-10% and then -5% more */
     max-width: 34.2%;
   }
-  
-  
+
   table td.tablecontent_id {
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -578,7 +546,6 @@ table {
     font-size: 24px;
   }
   div.leaderuser {
-    
     font-family: "VT323", monospace;
     font-weight: 500;
     font-style: normal;
@@ -587,23 +554,18 @@ table {
     padding: 0;
     margin: 0;
   }
-  table td.leadscore  {
-    
+  table td.leadscore {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
     text-indent: 90px;
-    padding:0;
-    margin:0;
-    
+    padding: 0;
+    margin: 0;
   }
-
 }
 
-@media screen and (max-width: 850px) and (min-width :692px) {
-  
-  
+@media screen and (max-width: 850px) and (min-width: 692px) {
   .Identify {
     z-index: 1;
     position: absolute;
@@ -644,7 +606,7 @@ table {
     left: 67.5%;
     transform: translate(-50%, -50%);
   }
-  
+
   .trophy {
     position: absolute;
     width: auto;
@@ -655,7 +617,6 @@ table {
     height: 24.3675%; /*-5% and then -5% more */
     max-width: 32.49%;
     z-index: 1;
-
   }
   .tree {
     z-index: 0;
@@ -669,65 +630,59 @@ table {
     max-width: 32.49%;
   }
 
-  
-/* width: 978px;
+  /* width: 978px;
 height: 584px; */
-.ldboard {
-  z-index: 0;
-  position: fixed;
-  align-items: center;
-  width: 19560px;
-  height: 11680px;
-  max-height: 70%;
-  max-width: 72%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.ldbanner {
-  z-index: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  /* width: auto; */
-  top: 12%;
-  left: 50%;
-  width: 589px;
-  height: 139px;
-  max-width: 50%;
-}
+  .ldboard {
+    z-index: 0;
+    position: fixed;
+    align-items: center;
+    width: 19560px;
+    height: 11680px;
+    max-height: 70%;
+    max-width: 72%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .ldbanner {
+    z-index: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* width: auto; */
+    top: 12%;
+    left: 50%;
+    width: 589px;
+    height: 139px;
+    max-width: 50%;
+  }
 
-table td.tablecontent_id {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  text-indent: -35px;
-  font-size: 24px;
-}
-div.leaderuser {
-  
-  font-family: "VT323", monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 24px;
-  text-indent: 25px;
-  padding: 0;
-  margin: 0;
-}
-table td.leadscore  {
-  
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  text-indent: 60px;
-  padding:0;
-  margin:0;
-  
-}
-
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -35px;
+    font-size: 24px;
+  }
+  div.leaderuser {
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 60px;
+    padding: 0;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 691px) {
-  
   .Identify {
     z-index: 1;
     position: absolute;
@@ -789,56 +744,52 @@ table td.leadscore  {
     /* width: 245px;
     height: 478px; */
     height: 19%; /*-5% */
-    max-width: 28.5%; 
+    max-width: 28.5%;
     z-index: 1;
   }
-  
-.tablecontent {
-  top: 4%;
-}
-  
-table td.tablecontent_id {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  text-indent: -50px;
-  font-size: 22px;
-  top: -5%;
-}
-div.leaderuser {
-  
-  font-family: "VT323", monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 22px;
-  text-indent: 0px;
-  padding: 0;
-  margin: 0;
-}
-table td.leadscore  {
-  
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
-  text-indent: 65px;
-  padding:0;
-  margin:0;
-  
-}
-.ldboard {
-  z-index: 0;
-  position: fixed;
-  align-items: center;
-  width: 19560px;
-  height: 11680px;
-  max-height: 70%;
-  max-width: 75%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
+  .tablecontent {
+    top: 20%;
+  }
+
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -50px;
+    font-size: 22px;
+    top: -5%;
+  }
+  div.leaderuser {
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    text-indent: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    text-indent: 65px;
+    padding: 0;
+    margin: 0;
+  }
+  .ldboard {
+    z-index: 0;
+    position: fixed;
+    align-items: center;
+    width: 19560px;
+    height: 11680px;
+    max-height: 70%;
+    max-width: 75%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 @media screen and (max-width: 500px) {
   .page {
@@ -966,42 +917,38 @@ table td.leadscore  {
     /* width: 245px;
     height: 478px; */
     height: 19%; /*-5% */
-    max-width: 28.5%; 
+    max-width: 28.5%;
     z-index: 1;
   }
-  
-.tablecontent {
-  top: 4%;
-}
-  
-table td.tablecontent_id {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  text-indent: -40px;
-  font-size: 20px;
-  top: -5%;
-}
-div.leaderuser {
-  
-  font-family: "VT323", monospace;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
-  text-indent: -5px;
-  padding: 0;
-  margin: 0;
-}
-table td.leadscore  {
-  
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  text-indent: 35px;
-  padding:0;
-  margin:0;
-  
-}
 
+  .tablecontent {
+    top: 20%;
+  }
+
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -40px;
+    font-size: 20px;
+    top: -5%;
+  }
+  div.leaderuser {
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-indent: -5px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-indent: 35px;
+    padding: 0;
+    margin: 0;
+  }
 }
