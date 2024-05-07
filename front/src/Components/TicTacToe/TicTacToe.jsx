@@ -5,7 +5,11 @@ import cat_icon from '../Assets/element/p&c/BigCat.png'
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from "../Assets/element/resetbutt.png";
 import header from "../Assets/element/3x3banner.png";
-
+import Sbut from "../Assets/element/Sbutton.png";
+import Mbut from "../Assets/element/Mbutton.png";
+import Lbut from "../Assets/element/Lbutton.png";
+import sizebx from "../Assets/element/sizebox.png";
+import bgboard from "../Assets/element/boardgame.png";
 import clicksound from "../SFX/interface-button.mp3";
 const clickaudio = new Audio(clicksound);
 
@@ -120,30 +124,35 @@ const TicTacToe = () => {
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
       <div className='board'>
         <div className="row1">
-          <div className="boxes" onClick={(e) => { toggle(e, 0) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 1) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 2) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 0) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 1) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 2) }}></div>
         </div>
         <div className="row2">
-          <div className="boxes" onClick={(e) => { toggle(e, 3) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 4) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 5) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 3) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 4) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 5) }}></div>
         </div>
         <div className="row3">
-          <div className="boxes" onClick={(e) => { toggle(e, 6) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 7) }}></div>
-          <div className="boxes" onClick={(e) => { toggle(e, 8) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 6) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 7) }}></div>
+          <div className="boxes1" onClick={(e) => { toggle(e, 8) }}></div>
         </div>
 
       </div>
-      <div className="Size">
-        <button className="PieceSizeS" onClick={() => setSelectedSize('S')}>S</button>
-        <button className="PieceSizeM" onClick={() => setSelectedSize('M')}>M</button>
-        <button className="PieceSizeL" onClick={() => setSelectedSize('L')}>L</button>
-      </div>
-
-
-      <button className='reset' onClick={handleReset}>
+      
+        <button className="sizeS" onClick={() => setSelectedSize('S')}>
+        <img src={Sbut} alt="S button" />
+        </button>
+        <button className="sizeM" onClick={() => setSelectedSize('M')}>
+        <img src={Mbut} alt="M button" />
+        </button>
+        <button className="sizeL" onClick={() => setSelectedSize('L')}>
+        <img src={Lbut} alt="L button" />
+        </button>
+        <img className="bgboard" src={bgboard} alt="board"></img>
+        <img className="SIZEBOX" src={sizebx} alt="box"></img>
+      <button className='reset1' onClick={handleReset}>
         <img src={resetbutton} alt="Reset button" />
       </button>
       </div>
