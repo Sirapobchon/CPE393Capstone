@@ -97,6 +97,7 @@ const TicTacToe = () => {
           (sizeC >= sizeA && sizeC >= sizeB)
         )
       ) {
+        console.log('Winner:', playerA);
         return playerA;
       }      
     }

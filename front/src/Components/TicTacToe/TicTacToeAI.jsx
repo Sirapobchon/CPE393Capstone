@@ -39,6 +39,7 @@ const TicTacToeAI = () => {
 
     const winner = calculateWinner();
     if (winner) {
+
       alert(`${winner} wins!`);
       setLock(true);
     }
@@ -56,18 +57,10 @@ const TicTacToeAI = () => {
     const winner = calculateWinner();
     if (winner) {
       alert(`${winner} wins!`);
+      winnerleaderupadate(winner);
       setLock(true);
     }
   };
-
-  useEffect(() => {
-    if (count % 2 !== 0 && !lock && aiTurn) {
-      const timeout = setTimeout(() => {
-        aiMove();
-      }, 500); // Adjust the delay as needed
-      return () => clearTimeout(timeout);
-    }
-  }, [count, lock, aiTurn]);
 
   const aiMove = () => {
     let num;
@@ -144,15 +137,49 @@ const TicTacToeAI = () => {
     return data.every(([player]) => player !== '');
   };
   
-  
-  
+  useEffect(() => {
+    if (count % 2 !== 0 && !lock && aiTurn) {
+      const timeout = setTimeout(() => {
+        aiMove();
+      }, 500); // Adjust the delay as needed
+      return () => clearTimeout(timeout);
+    }
+  }, [count, lock, aiTurn, aiMove]); // Include aiMove in the dependency array
 
   const handleClick = (e, num) => {
     if (!lock && !aiTurn) {
       togglePlayer(num);
       setAiTurn(true); // Set AI's turn to true after player makes a move
+      if (calculateWinner()) {
+        setLock(true); // Prevent further moves if a winner is already determined
+      }
     }
   };
+  
+  const winnerleaderupadate = (playerA) => {
+    if (playerA === 'Dog') {
+          const username = localStorage.getItem('username'); // Assuming username is stored in local storage
+          console.log('Dog won', username);
+          // Call the putLeaderboard endpoint to increment win count
+          fetch('http://localhost:8080/api/users/addleader', {
+            method: 'PUT',
+            headers: new Headers(),
+            body: JSON.stringify({ email: username }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success === 1) {
+                console.log('Win count incremented successfully');
+              } else {
+                console.error('Failed to increment win count:', data.message);
+              }
+            })
+            .catch((error) => {
+              console.error('Error updating win count:', error);
+            });
+        }
+  }
+
 
   const calculateWinner = () => {
     const lines = [
@@ -165,13 +192,16 @@ const TicTacToeAI = () => {
       [0, 4, 8],
       [2, 4, 6],
     ];
-
+  
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       const [playerA, sizeA] = data[a];
       const [playerB, sizeB] = data[b];
       const [playerC, sizeC] = data[c];
-
+  
+      //console.log('Checking line:', lines[i]);
+      //console.log('Players and sizes:', playerA, sizeA, playerB, sizeB, playerC, sizeC);
+  
       if (
         playerA &&
         playerA === playerB &&
@@ -180,24 +210,15 @@ const TicTacToeAI = () => {
           (sizeA >= sizeB && sizeA >= sizeC) ||
           (sizeB >= sizeA && sizeB >= sizeC) ||
           (sizeC >= sizeA && sizeC >= sizeB))
-      ) 
-      {
-        if (playerA === 'username') {
-          /*axios.get('/api/users/addleader', { username: 'username', wincount: 1})
-            .then(response => {
-              console.log(response.data);
-            })
-            .catch(error => {
-              console.error('There was an error!', error);
-            });*/
-        }
+      ) {
+        //console.log('Winner:', playerA);
         return playerA;
       }
     }
-
+  
     return null;
   };
-
+  
   const getSelectedSizeValue = () => {
     if (selectedSize === 'S') {
       return 1;
