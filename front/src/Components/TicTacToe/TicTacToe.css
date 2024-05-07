@@ -193,3 +193,325 @@
 .sizeS:hover, .sizeM:hover, .sizeL:hover {
     top: calc(80% - 2px); 
 }
+
+
+@media screen and (max-width: 2560px) {
+
+}
+@media screen and (max-width: 1920px) and (min-width:1800px) {
+
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 175px;
+        left: -30px;
+    }
+    button.sizeS{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 28%;
+        top: 79.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+@media screen and (max-width: 1800px) and (min-width:1501px) {
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 175px;
+        left: -30px;
+    }
+    button.sizeS{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 28%;
+        top: 79.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (max-width: 1500px) and (min-width:1201px) {
+
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 175px;
+        left: -30px;
+    }
+    button.sizeS{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 28%;
+        top: 79.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+@media screen and (max-width: 1200px) and (min-width:1001px) {
+
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 175px;
+        left: -30px;
+    }
+    button.sizeS{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 8%;
+        top: 82.5%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 28%;
+        top: 79.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 1000px) and (min-width:801px) {
+
+     
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 175px;
+        left: -30px;
+    }
+    button.sizeS{
+        position: absolute;
+        max-width: 8%;
+        top: 79.5%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 8%;
+        top: 79.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 8%;
+        top: 79.5%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 28%;
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+}
+@media screen and (max-width: 800px) and (min-width:601px) {
+
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 125px;
+        left: -30px;
+    }  
+    button.sizeS{
+        position: absolute;
+        max-width: 9%;
+        top: 79%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 9%;
+        top: 79%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 9%;
+        top: 79%;
+        left: 57.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 30%;
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+
+
+}
+
+@media screen and (max-width: 600px) and (min-width:500px) {
+
+    div.board{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        /*margin: auto; */
+        position: relative;
+        top: 100px;
+        left: -30px;
+    }  
+    button.sizeS{
+        position: absolute;
+        max-width: 12%;
+        top: 78.75%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+        transition: margin 0.2s ease-in-out;
+    }
+
+    button.sizeM{
+        position: absolute;
+        max-width: 12%;
+        top: 78.75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    button.sizeL{
+        position: absolute;
+        max-width: 12%;
+        top: 78.75%;
+        left: 59.5%;
+        transform: translate(-50%, -50%);
+    }
+    img.SIZEBOX{
+        z-index: -1;
+        position: absolute;
+        max-width: 40%;
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+
+}
+
+
