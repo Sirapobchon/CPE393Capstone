@@ -98,10 +98,10 @@ module.exports = {
         })
     },
     putLeaderboard: (req, res) => {
-        const { email } = req.body; // Assuming the email is sent in the request body
+        const { username } = req.body; // Assuming the email is sent in the request body
         User.findOneAndUpdate(
-          { email }, // Find the user by email
-          { $inc: { winCount: 1 } }, // Increment the winCount by 1
+          { email : username }, // Find the user by email
+          { $inc: { wincount: 1 } }, // Increment the winCount by 1
           { new: true } // Return the updated document
         )
           .then((updatedUser) => {

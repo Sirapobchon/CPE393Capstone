@@ -13,32 +13,47 @@ For subject CPE393, KMUTT
 
 ## Coding Language
 1. Frontend
-    - Python
     - Node.JS
     - React
 2. Backend
-    - Prisma
+    - Mongoose
     - MongoDB
 
-# React file edited
-- src
-    - Components
-        - Assets
-            - cat.jpg
-            - dog.jpg
-        - TicTacToe
-            - TicTacToe.css
-            - TicTacToe.jsx
-        - header
-            - header.css
-            - header.jsx
-        - users
-            - login.jsx
-            - register.jsx
-    - index.css
-- tailwind.config.js
-            
-# Getting Started with Create React App
+# React file included
+- Frontend
+    - src
+        - Components
+            - Game Assets and images
+            - TicTacToe
+                - TicTacToe
+                - TicTacToeAI
+            - Header
+                - header.css
+                - header.jsx
+            - Leaderboard files
+            - users
+                - login.jsx
+                - register.jsx
+                - Maingame.jsx
+                - HowToPlay.jsx
+                - Home.jsx
+                - GameMode.jsx
+        - App.js
+        - index.css
+    - tailwind.config.js
+- Backend
+    - models
+    - routers
+
+# Start the production build 
+
+If you want to just run the product .First ,cd into `cd front`. 
+
+For first use, Use `npm install -g serve ` to install static server to serve the product. 
+
+Then use `serve -s build` to serve it with the static server
+
+# Editing this React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
