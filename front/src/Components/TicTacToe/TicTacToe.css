@@ -1,517 +1,495 @@
-.tic-container{
-    text-align: center;
+.tic-container {
+  text-align: center;
 }
-.title{
-    z-index: 1;
-    position: fixed;
-    max-width: 25%;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.title {
+  z-index: 1;
+  position: fixed;
+  max-width: 25%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.title span{
-    color: darkgoldenrod;
-    padding-left: 15px;
+.title span {
+  color: darkgoldenrod;
+  padding-left: 15px;
 }
-.reset{
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    max-width: 280px;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.reset {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  max-width: 280px;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.reset1{
-    z-index: 1;
-    position: absolute;
-    align-items: center;
-    max-width: 280px;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.reset1 {
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  max-width: 280px;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.boxes{
-    display: flex;
-    height: 100px;
-    width: 100px;
-    background: #ab875f;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.boxes {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background: #ab875f;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.boxes1{
-    display: flex;
-    height: 120px;
-    width: 120px;
-    background: #ab875f;
-    border: 4px solid #fff9e9;
-    border-radius: 12 solid;
-    cursor: pointer
+.boxes1 {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  background: #ab875f;
+  border: 4px solid #fff9e9;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.board{
-    height: 300px;
-    width: 300px;
-    display: flex;
-    margin: auto;
-    position: relative;
-    top: 210px;
-    left: -30px;
+.board {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 210px;
+  left: -30px;
 }
-.Size{
-    height: 200px;
-    width: 350px;
-    display: flex;
-    margin: auto;
-    position: relative;
-    top:300px;
+.Size {
+  height: 200px;
+  width: 350px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 300px;
 }
-.PieceSizeS{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeS {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.PieceSizeS1{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeS1 {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.PieceSizeM{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeM {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.PieceSizeM1{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeM1 {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.PieceSizeL1{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeL1 {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
-.PieceSizeL{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    background: white;
-    border: 4px solid pink;
-    border-radius: 12 solid;
-    cursor: pointer
+.PieceSizeL {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: 4px solid pink;
+  border-radius: 12 solid;
+  cursor: pointer;
 }
 
 .PieceSizeS:hover {
-    background-color: rgb(114, 208, 104);
-    border: 4px solid white;
+  background-color: rgb(114, 208, 104);
+  border: 4px solid white;
 }
 
 .PieceSizeM:hover {
-    background-color: rgb(236, 232, 195);
-    border: 4px solid white;
+  background-color: rgb(236, 232, 195);
+  border: 4px solid white;
 }
 
 .PieceSizeL:hover {
-    background-color: rgb(232, 106, 150);
-    border: 4px solid white;
+  background-color: rgb(232, 106, 150);
+  border: 4px solid white;
 }
 .header {
-    z-index: 1;
+  z-index: 1;
+  position: absolute;
+  max-width: 25%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boxsize {
+  z-index: 1;
+  position: absolute;
+  max-width: 25%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sizeS {
+  position: absolute;
+  max-width: 25%;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  transition: margin 0.2s ease-in-out;
+}
+.sizeM {
+  position: absolute;
+  max-width: 25%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sizeL {
+  position: absolute;
+  max-width: 25%;
+  top: 80%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.SIZEBOX {
+  z-index: -1;
+  position: absolute;
+  max-width: 25%;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bgboard {
+  z-index: -1;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sizeS:hover,
+.sizeM:hover,
+.sizeL:hover {
+  top: calc(80% - 2px);
+}
+
+@media screen and (max-width: 2560px) {
+}
+@media screen and (max-width: 1920px) and (min-width: 1800px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 200.5px;
+    left: -30px;
+  }
+  button.sizeS {
     position: absolute;
-    max-width: 25%;
-    top: 15%;
+    max-width: 8%;
+    top: 82.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.boxsize {
-    z-index: 1;
+  button.sizeL {
     position: absolute;
-    max-width: 25%;
-    top: 15%;
-    left: 50%;
+    max-width: 8%;
+    top: 82.5%;
+    left: 57.5%;
     transform: translate(-50%, -50%);
-}
-.sizeS{
-    position: absolute;
-    max-width: 25%;
-    top: 80%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    transition: margin 0.2s ease-in-out;
-}
-.sizeM{
-    position: absolute;
-    max-width: 25%;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.sizeL{
-    position: absolute;
-    max-width: 25%;
-    top: 80%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
-.SIZEBOX{
+  }
+  img.SIZEBOX {
     z-index: -1;
     position: absolute;
-    max-width: 25%;
+    max-width: 28%;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1800px) and (min-width: 1501px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 180px;
+    left: -30px;
+  }
+  button.sizeS {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 28%;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 180px;
+    left: -30px;
+  }
+  button.sizeS {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 28%;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 180px;
+    left: -30px;
+  }
+  button.sizeS {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 8%;
+    top: 82.5%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 28%;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 180px;
+    left: -30px;
+  }
+  button.sizeS {
+    position: absolute;
+    max-width: 8%;
+    top: 79.5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 8%;
+    top: 79.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 8%;
+    top: 79.5%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 28%;
     top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
 }
-
-
-.bgboard{
-    z-index: -1;
+@media screen and (max-width: 800px) and (min-width: 601px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 180px;
+    left: -30px;
+  }
+  button.sizeS {
     position: absolute;
-    top: 42%;
+    max-width: 9%;
+    top: 79%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
+
+  button.sizeM {
+    position: absolute;
+    max-width: 9%;
+    top: 79%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-.sizeS:hover, .sizeM:hover, .sizeL:hover {
-    top: calc(80% - 2px); 
-}
-
-
-@media screen and (max-width: 2560px) {
-
-}
-@media screen and (max-width: 1920px) and (min-width:1800px) {
-
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 175px;
-        left: -30px;
-    }
-    button.sizeS{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 28%;
-        top: 79.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-}
-@media screen and (max-width: 1800px) and (min-width:1501px) {
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 175px;
-        left: -30px;
-    }
-    button.sizeS{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 28%;
-        top: 79.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 9%;
+    top: 79%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 30%;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-@media screen and (max-width: 1500px) and (min-width:1201px) {
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  div.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /*margin: auto; */
+    position: relative;
+    top: 160px;
+    left: -30px;
+  }
+  button.sizeS {
+    position: absolute;
+    max-width: 12%;
+    top: 78.75%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    transition: margin 0.2s ease-in-out;
+  }
 
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 175px;
-        left: -30px;
-    }
-    button.sizeS{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 28%;
-        top: 79.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+  button.sizeM {
+    position: absolute;
+    max-width: 12%;
+    top: 78.75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button.sizeL {
+    position: absolute;
+    max-width: 12%;
+    top: 78.75%;
+    left: 59.5%;
+    transform: translate(-50%, -50%);
+  }
+  img.SIZEBOX {
+    z-index: -1;
+    position: absolute;
+    max-width: 40%;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-@media screen and (max-width: 1200px) and (min-width:1001px) {
-
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 175px;
-        left: -30px;
-    }
-    button.sizeS{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 8%;
-        top: 82.5%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 28%;
-        top: 79.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-@media screen and (max-width: 1000px) and (min-width:801px) {
-
-     
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 175px;
-        left: -30px;
-    }
-    button.sizeS{
-        position: absolute;
-        max-width: 8%;
-        top: 79.5%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 8%;
-        top: 79.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 8%;
-        top: 79.5%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 28%;
-        top: 77%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    
-}
-@media screen and (max-width: 800px) and (min-width:601px) {
-
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 125px;
-        left: -30px;
-    }  
-    button.sizeS{
-        position: absolute;
-        max-width: 9%;
-        top: 79%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 9%;
-        top: 79%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 9%;
-        top: 79%;
-        left: 57.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 30%;
-        top: 77%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    
-
-
-}
-
-@media screen and (max-width: 600px) and (min-width:500px) {
-
-    div.board{
-        height: 300px;
-        width: 300px;
-        display: flex;
-        /*margin: auto; */
-        position: relative;
-        top: 100px;
-        left: -30px;
-    }  
-    button.sizeS{
-        position: absolute;
-        max-width: 12%;
-        top: 78.75%;
-        left: 41%;
-        transform: translate(-50%, -50%);
-        transition: margin 0.2s ease-in-out;
-    }
-
-    button.sizeM{
-        position: absolute;
-        max-width: 12%;
-        top: 78.75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    button.sizeL{
-        position: absolute;
-        max-width: 12%;
-        top: 78.75%;
-        left: 59.5%;
-        transform: translate(-50%, -50%);
-    }
-    img.SIZEBOX{
-        z-index: -1;
-        position: absolute;
-        max-width: 40%;
-        top: 77%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    
-
-}
-
-
