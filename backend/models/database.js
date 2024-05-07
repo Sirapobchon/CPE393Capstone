@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     password: String,
 	wincount : Number
 },{ collection: 'profiles' })
-const leaderSchema = new Schema({
+/*const leaderSchema = new Schema({
     game_id: String,
 	rank : Number,
 	game_mode : String,
@@ -30,10 +30,10 @@ const Game_modeSchema = new Schema({
 	mode4x4	: Number,
 	with_ai	: Number,
 	with_player : Number
-},{ collection: 'game_modes' })
+},{ collection: 'game_modes' })*/
 
 const User = mongoose.model('profiles', UserSchema);
-const Leader = mongoose.model('leaderboards', leaderSchema);
+/*const Leader = mongoose.model('leaderboards', leaderSchema);
 const Game = mongoose.model('games',GameSchema );
-const Game_mode = mongoose.model('game_modes',Game_modeSchema );
-module.exports = {User, Leader, Game, Game_mode};
+const Game_mode = mongoose.model('game_modes',Game_modeSchema );*/
+module.exports = {User/*, Leader, Game, Game_mode*/};
