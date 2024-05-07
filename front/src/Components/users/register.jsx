@@ -94,8 +94,8 @@ function Register() {
     <div className="RegisterPage">
       <img className="registertt" src={registertt} alt="Register tt"></img>
       <video className="AnimationBg" src={BGvid} autoPlay muted loop></video>
-      <img className="emailtt" src={emailtt} alt="Email tt"></img>
-      <img className="usrtt" src={usrtt} alt="Username tt"></img>
+      <img className="usrtt" src={emailtt} alt="Email tt"></img>
+      <img className="emailtt" src={usrtt} alt="Username tt"></img>
       <img className="passtt" src={passtt} alt="Password tt"></img>
       <img className="cfpasstt" src={cfpasstt} alt="Confirm Password tt"></img>
       <img
