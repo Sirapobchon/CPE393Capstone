@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 
 function genrateToken(body) {
     const {_id, firstname, lastname, username, email} = body;
+    const { player, wincount} = body2;
     return jwt.sign({_id, firstname, lastname, username, email}, process.env.secretJWT, {
         expiresIn: "1d",
     })
@@ -85,6 +86,18 @@ module.exports = {
         })
     },
     userLeaderboard:(req, res) => {
+        User.find()
+        .then((User) => {
+            const transformedLeader = User.map((User) => {
+                return { username: User.username, winCount: User.wincount }
+            })
+            return res.json({
+                success: 1,
+                Leader: transformedLeader
+            })
+        })
+    },
+    putLeaderboard:(req, res) => {
         User.find()
         .then((User) => {
             const transformedLeader = User.map((User) => {

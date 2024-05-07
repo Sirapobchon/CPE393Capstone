@@ -183,13 +183,13 @@ const TicTacToeAI = () => {
       ) 
       {
         if (playerA === 'username') {
-          axios.post('/api/users/leader', { username: 'username', wincount: 1})
+          /*axios.get('/api/users/addleader', { username: 'username', wincount: 1})
             .then(response => {
               console.log(response.data);
             })
             .catch(error => {
               console.error('There was an error!', error);
-            });
+            });*/
         }
         return playerA;
       }
