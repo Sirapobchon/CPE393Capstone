@@ -183,6 +183,75 @@ height: 139px; */
   transform: scale(1.1);
 }
 
+.tablecontent {
+  left:-30%;
+  top: 7%;
+}
+
+div.leaderuser {
+  
+  font-family:Monospace ;
+  font-size: 22px;
+  text-indent: 150px;
+  padding: 0;
+  margin: 0;
+}
+table td.tablecontent_id {
+  font-family:Monospace ;
+  font-size: 22px;
+}
+
+table td.leadscore  {
+  
+  font-family:Monospace ;
+  font-size: 22px;
+  text-indent: 170px;
+  padding:0;
+  margin:0;
+  
+}
+
+
+/*
+
+.mainprogress {
+  height:60px;
+  border:2px solid black;
+}
+.mainprogress div{
+  padding:0;
+  margin:0;
+  float: left;
+}
+table {
+  table-layout:fixed;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.Row {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+
+*/
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
+
+
+
+
+
+
+
+
+
 .noPlayersMessage {
   position: fixed; /* Position relative to the viewport */
   top: 50%; /* Center vertically */
@@ -333,7 +402,7 @@ height: 139px; */
     width: 22%;
     max-width: 280px;
     top: 23%;
-    left: 72%;
+    left: 70%;
     transform: translate(-50%, -50%);
   }
   

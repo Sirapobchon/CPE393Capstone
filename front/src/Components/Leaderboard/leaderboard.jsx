@@ -82,13 +82,16 @@ function Leaderboard() {
             </th>
           </tr>
         </thead>
-        <tbody className="tablecontent">
+        <tbody className="tablecontent" cellpadding="2" cellspacing="0">
           {players.length > 0 ? (
             players.map((player, index) => (
               <tr key={index}>
-                <td className="tablecontent_id">{index+1}</td>
-                <td >{player.username}</td>
-                <td>{player.winCount}</td>
+    
+        
+              <td className="tablecontent_id">{index+1}</td>
+              <div className="leaderuser" ><td>{player.username}</td></div>
+              <td className="leadscore">{player.winCount}</td>
+                
               </tr>
             ))
           ) : (
