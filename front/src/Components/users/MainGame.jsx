@@ -4,7 +4,6 @@ import "./MainGame.css";
 import BGvid from "../Assets/CloudBg.mp4";
 import playbut from "../Assets/element/play.png";
 import leaderbut from "../Assets/element/Leaderboard.png";
-import characterbut from "../Assets/element/character.png";
 import logoutbut from "../Assets/element/loguot.png";
 import rbcat from "../Assets/element/rbcat.gif";
 import rbhotdog from "../Assets/element/rbhotdog.gif";
