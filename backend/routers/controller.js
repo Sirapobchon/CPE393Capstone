@@ -97,18 +97,25 @@ module.exports = {
             })
         })
     },
-    putLeaderboard:(req, res) => {
-        User.find()
-        .then((User) => {
-            const transformedLeader = User.map((User) => {
-                return { username: User.username, winCount: User.wincount }
-            })
-            return res.json({
-                success: 1,
-                Leader: transformedLeader
-            })
-        })
-    },
+    putLeaderboard: (req, res) => {
+        const { email } = req.body; // Assuming the email is sent in the request body
+        User.findOneAndUpdate(
+          { email }, // Find the user by email
+          { $inc: { winCount: 1 } }, // Increment the winCount by 1
+          { new: true } // Return the updated document
+        )
+          .then((updatedUser) => {
+            if (!updatedUser) {
+              return res.status(404).json({ success: 0, message: 'User not found' });
+            }
+            return res.json({ success: 1, message: 'Win count incremented successfully', updatedUser });
+          })
+          .catch((error) => {
+            console.error('Error updating win count:', error);
+            return res.status(500).json({ success: 0, message: 'Failed to update win count' });
+          });
+      },
+      
     userEdit:(req, res) => {
         const body = req.body;
         User.updateOne({ _id: body._id }, {
