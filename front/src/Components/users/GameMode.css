@@ -289,9 +289,9 @@
     position: absolute;
     align-items: center;
     height: auto;
-    width: 20%;
+    width: 27%;
     max-width: 280px;
-    top: 91%;
+    top: 89%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

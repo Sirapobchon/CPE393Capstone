@@ -78,10 +78,10 @@
   z-index: 1;
   position: absolute;
   height: auto;
-  width: 20%;
+  width: 22%;
   max-width: 280px;
   top: 23%;
-  left: 75%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 /* width: 245px;
@@ -185,27 +185,34 @@ height: 139px; */
 
 .tablecontent {
   left:-30%;
-  top: 7%;
+  top: 4%;
 }
 
 div.leaderuser {
   
-  font-family:Monospace ;
-  font-size: 22px;
-  text-indent: 150px;
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  text-indent: 160px;
   padding: 0;
   margin: 0;
 }
 table td.tablecontent_id {
-  font-family:Monospace ;
-  font-size: 22px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: -5px;
+  font-size: 24px;
 }
 
 table td.leadscore  {
   
-  font-family:Monospace ;
-  font-size: 22px;
-  text-indent: 170px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  text-indent: 190px;
   padding:0;
   margin:0;
   
@@ -263,8 +270,40 @@ table {
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
 }
+@media screen and (max-width: 1700px) and (min-width : 1401px) {
+  div.leaderuser {
+    
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 140px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -5px;
+    font-size: 24px;
+  }
 
-@media screen and (max-width: 1300px) and (min-width : 1000px) {
+  table td.leadscore  {
+    
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 140px;
+    padding:0;
+    margin:0;
+    
+  }
+
+}
+
+@media screen and (max-width: 1400px) and (min-width : 1301px) {
 
   .Identify {
     z-index: 1;
@@ -273,7 +312,7 @@ table {
     width: 20%;
     max-width: 280px;
     top: 23%;
-    left: 28%;
+    left: 26%;
     transform: translate(-50%, -50%);
   }
   .Name {
@@ -283,15 +322,15 @@ table {
     width: 20%;
     max-width: 280px;
     top: 23%;
-    left: 39%;
+    left: 37%;
     transform: translate(-50%, -50%);
   }
   .Score {
     z-index: 1;
     position: absolute;
     z-index: -1;
-    top: 0;
-    left: 0;
+    top: 23%;
+    left: 60.5%;
     width: 100%;
     object-fit: cover;
   }
@@ -303,21 +342,82 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -5px;
+    font-size: 24px;
+  }
+  div.leaderuser {
+    
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 95px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore  {
+    
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 130px;
+    padding:0;
+    margin:0;
+    
+  }
+  .tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 30%;
+    left: 2%;
+    /* width: 245px;
+    height: 478px; */
+    height: 50%;
+    max-width: 40%;
+  }
+  .trophy {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 81%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 40%;
+    z-index: 1;
+    /* position: absolute;
+    width: auto;
+    top: 51%;
+    left: 86%;
+    /* height: 50%; */
+    /* width: 226.5px;
+    height: 270px;
+    max-width: 50%; */
+  }
+
 
 }
 
 @media screen and (max-width: 1300px) and (min-width : 1000px) {
 
-  .Identify {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    width: 20%;
-    max-width: 280px;
-    top: 23%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-  }
+  
+.Identify {
+  z-index: 1;
+  position: absolute;
+  height: auto;
+  width: 20%;
+  max-width: 280px;
+  top: 23%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
   .Name {
     z-index: 1;
     position: absolute;
@@ -325,7 +425,7 @@ table {
     width: 20%;
     max-width: 280px;
     top: 23%;
-    left: 39%;
+    left: 33%;
     transform: translate(-50%, -50%);
   }
   .Score {
@@ -352,27 +452,66 @@ table {
   .trophy {
     position: absolute;
     width: auto;
-    top: 50%;
+    top: 51.5%;
     left: 78%;
     /* width: 245px;
     height: 478px; */
-    height: 30%;
-    max-width: 40%;
+    height: 28.5%; /*-5% */ 
+    max-width: 38%;
     z-index: 1;
 
+  }.tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 35%;
+    left: 2.5%;
+    /* width: 245px;
+    height: 478px; */
+    height: 45.125%; /*-5% and then 5% more */
+    max-width: 36.1%;
+  }
+  
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -73px;
+    font-size: 24px;
+  }
+  div.leaderuser {
+    
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 70px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore  {
+    
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 160px;
+    padding:0;
+    margin:0;
+    
   }
 }
-@media screen and (max-width: 999px) and (min-width : 850px) {
+@media screen and (max-width: 999px) and (min-width : 851px) {
 
   
   .Identify {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 20%;
+    width: 10%;
     max-width: 280px;
     top: 23%;
-    left: 27%;
+    left: 14%;
     transform: translate(-50%, -50%);
   }
   .Name {
@@ -382,97 +521,27 @@ table {
     width: 19%;
     max-width: 280px;
     top: 23%;
-    left: 35.5%;
+    left: 30%;
     transform: translate(-50%, -50%);
   }
   .Score {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 20%;
+    width: 19%;
     max-width: 280px;
     top: 23%;
-    left: 54%;
+    left: 50.5%;
     transform: translate(-50%, -50%);
   }
   .sort {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 22%;
+    width: 21%;
     max-width: 280px;
     top: 23%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .trophy {
-    position: absolute;
-    width: auto;
-    top: 53%;
-    left: 74%;
-    /* width: 245px;
-    height: 478px; */
-    height: 27%;
-    max-width: 36%;
-    z-index: 1;
-
-  }
-  .tree {
-    z-index: 0;
-    position: absolute;
-    width: auto;
-    top: 35.5%;
-    left: 2%;
-    /* width: 245px;
-    height: 478px; */
-    height: 45%; /*-10% */
-    max-width: 36%;
-  }
-
-}
-
-@media screen and (max-width: 850px) {
-  
-  
-  .Identify {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    width: 9%;
-    max-width: 280px;
-    top: 23%;
-    left: 21.5%; /* -6% from above function*/
-    transform: translate(-50%, -50%);
-  }
-  .Name {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    width: 18%;
-    max-width: 280px;
-    top: 23%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-  }
-  .Score {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    width: 17%;
-    max-width: 280px;
-    top: 23%;
-    left: 52.5%;
-    transform: translate(-50%, -50%);
-  }
-  .sort {
-    z-index: 1;
-    position: absolute;
-    height: auto;
-    width: 23%;
-    max-width: 280px;
-    top: 23%;
-    left: 72.5%;
+    left: 68.5%;
     transform: translate(-50%, -50%);
   }
   
@@ -480,7 +549,7 @@ table {
     position: absolute;
     width: auto;
     top: 54.5%;
-    left: 71%;
+    left: 76%;
     /* width: 245px;
     height: 478px; */
     height: 25.65%; /* -5%*/
@@ -493,11 +562,111 @@ table {
     position: absolute;
     width: auto;
     top: 37.5%;
-    left: 2.5%;
+    left: 1%;
     /* width: 245px;
     height: 478px; */
-    height: 42.75%; /*-5% */
+    height: 42.75%; /*-10% and then -5% more */
     max-width: 34.2%;
+  }
+  
+  
+  table td.tablecontent_id {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: -50px;
+    font-size: 24px;
+  }
+  div.leaderuser {
+    
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  table td.leadscore  {
+    
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-indent: 90px;
+    padding:0;
+    margin:0;
+    
+  }
+
+}
+
+@media screen and (max-width: 850px) and (min-width :692px) {
+  
+  
+  .Identify {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 10%;
+    max-width: 280px;
+    top: 23%;
+    left: 15%; /* -6% from above function*/
+    transform: translate(-50%, -50%);
+  }
+  .Name {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 18%;
+    max-width: 280px;
+    top: 23%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+  .Score {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 17%;
+    max-width: 280px;
+    top: 23%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+  }
+  .sort {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 18%;
+    max-width: 280px;
+    top: 22.75%;
+    left: 67.5%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .trophy {
+    position: absolute;
+    width: auto;
+    top: 55.75%;
+    left: 73%;
+    /* width: 245px;
+    height: 478px; */
+    height: 24.3675%; /*-5% and then -5% more */
+    max-width: 32.49%;
+    z-index: 1;
+
+  }
+  .tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 39.5%;
+    left: 0%;
+    /* width: 245px;
+    height: 478px; */
+    height: 40.6125%; /*-5% and then -5% more */
+    max-width: 32.49%;
   }
 
   
@@ -527,8 +696,150 @@ height: 584px; */
   max-width: 50%;
 }
 
+table td.tablecontent_id {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: -35px;
+  font-size: 24px;
+}
+div.leaderuser {
+  
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  text-indent: 25px;
+  padding: 0;
+  margin: 0;
+}
+table td.leadscore  {
+  
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  text-indent: 60px;
+  padding:0;
+  margin:0;
+  
 }
 
+}
+@media screen and (max-width: 691px) {
+  
+  .Identify {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 11.5%;
+    max-width: 280px;
+    top: 23%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  .Name {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 22%;
+    max-width: 280px;
+    top: 23%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+  }
+  .Score {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 22%;
+    max-width: 280px;
+    top: 23%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+  }
+  .sort {
+    z-index: 1;
+    position: absolute;
+    height: auto;
+    width: 24%;
+    max-width: 280px;
+    top: 20.25%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+  }
+  /* width: 245px;
+    height: 478px; */
+  .tree {
+    z-index: 0;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 0%;
+    /* width: 245px;
+    height: 478px; */
+    height: 30%;
+    max-width: 30%;
+  }
+  .trophy {
+    position: absolute;
+    width: auto;
+    top: 61%;
+    left: 76%;
+    /* width: 245px;
+    height: 478px; */
+    height: 19%; /*-5% */
+    max-width: 28.5%; 
+    z-index: 1;
+  }
+  
+.tablecontent {
+  top: 4%;
+}
+  
+table td.tablecontent_id {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: -50px;
+  font-size: 22px;
+  top: -5%;
+}
+div.leaderuser {
+  
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  text-indent: 0px;
+  padding: 0;
+  margin: 0;
+}
+table td.leadscore  {
+  
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  text-indent: 65px;
+  padding:0;
+  margin:0;
+  
+}
+.ldboard {
+  z-index: 0;
+  position: fixed;
+  align-items: center;
+  width: 19560px;
+  height: 11680px;
+  max-height: 70%;
+  max-width: 75%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+}
 @media screen and (max-width: 500px) {
   .page {
     display: flex;
@@ -559,40 +870,40 @@ height: 584px; */
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 9%;
+    width: 11.5%;
     max-width: 280px;
-    top: 20%;
-    left: 20%;
+    top: 23%;
+    left: 10%;
     transform: translate(-50%, -50%);
   }
   .Name {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 18%;
+    width: 22%;
     max-width: 280px;
-    top: 20%;
-    left: 34%;
+    top: 23%;
+    left: 28%;
     transform: translate(-50%, -50%);
   }
   .Score {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 18%;
+    width: 22%;
     max-width: 280px;
-    top: 20%;
-    left: 52.5%;
+    top: 23%;
+    left: 51.5%;
     transform: translate(-50%, -50%);
   }
   .sort {
     z-index: 1;
     position: absolute;
     height: auto;
-    width: 23%;
+    width: 24%;
     max-width: 280px;
-    top: 20%;
-    left: 74%;
+    top: 20.25%;
+    left: 72%;
     transform: translate(-50%, -50%);
   }
   /* width: 245px;
@@ -602,7 +913,7 @@ height: 584px; */
     position: absolute;
     width: auto;
     top: 50%;
-    left: 2%;
+    left: -7%;
     /* width: 245px;
     height: 478px; */
     height: 30%;
@@ -658,4 +969,39 @@ height: 584px; */
     max-width: 28.5%; 
     z-index: 1;
   }
+  
+.tablecontent {
+  top: 4%;
+}
+  
+table td.tablecontent_id {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: -40px;
+  font-size: 20px;
+  top: -5%;
+}
+div.leaderuser {
+  
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-indent: -5px;
+  padding: 0;
+  margin: 0;
+}
+table td.leadscore  {
+  
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-indent: 35px;
+  padding:0;
+  margin:0;
+  
+}
+
 }
