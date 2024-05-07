@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.52f28d08.css",
+    "main.js": "/static/js/main.81b6d227.js",
+    "static/js/453.7b154009.chunk.js": "/static/js/453.7b154009.chunk.js",
+    "static/media/CloudBg.mp4": "/static/media/CloudBg.46a3da90518ccd228ae7.mp4",
+    "static/media/rbhotdog.gif": "/static/media/rbhotdog.07a825924fb22759f818.gif",
+    "static/media/htpboard.png": "/static/media/htpboard.7b14be8aa70927ab5268.png",
+    "static/media/dirt.png": "/static/media/dirt.ab1e6a64c3b8e9a0c08a.png",
+    "static/media/moutain2.png": "/static/media/moutain2.d8d5494a3a6cff35b1b2.png",
+    "static/media/dogrun.gif": "/static/media/dogrun.e9415302d077ec7183d2.gif",
+    "static/media/ballooncat.gif": "/static/media/ballooncat.23858fc4e3d2acbb8c1b.gif",
+    "static/media/benchwbush.png": "/static/media/benchwbush.9edb0305824f8f57a491.png",
+    "static/media/treewstone.png": "/static/media/treewstone.472469690d157eb07ec5.png",
+    "static/media/htp.png": "/static/media/htp.1d42cccc63d4350b5226.png",
+    "static/media/ldbanner.png": "/static/media/ldbanner.13ca5b743891f1ea57fd.png",
+    "static/media/tree.png": "/static/media/tree.863dd79eb46231a52d6d.png",
+    "static/media/cat.png": "/static/media/cat.abba6978e3368418c2aa.png",
+    "static/media/sleepycat.gif": "/static/media/sleepycat.51f80109fca8352fd18d.gif",
+    "static/media/boardgame.png": "/static/media/boardgame.a90f1529101f14d7de97.png",
+    "static/media/dog.png": "/static/media/dog.a379bfbd026d2ea62730.png",
+    "static/media/ldboard.png": "/static/media/ldboard.6f6f6cbfb1a98a529942.png",
+    "static/media/BigDog.png": "/static/media/BigDog.863c69cdee25120edf14.png",
+    "static/media/sizebox.png": "/static/media/sizebox.027c35c26f51d25803a6.png",
+    "static/media/rbcat.gif": "/static/media/rbcat.4e25b43699cc01d546b2.gif",
+    "static/media/smallerthanbiggerboard.png": "/static/media/smallerthanbiggerboard.656fa528660659855272.png",
+    "static/media/loginboard.png": "/static/media/loginboard.e2236b5d4ef2579f195c.png",
+    "static/media/3x3banner.png": "/static/media/3x3banner.ad410adfa486aa1041a6.png",
+    "static/media/registertt.png": "/static/media/registertt.25a9af702b112294ac10.png",
+    "static/media/gamemodett.png": "/static/media/gamemodett.eff2059ff1464658cf66.png",
+    "static/media/BigCat.png": "/static/media/BigCat.139b2e0d8ab78abb1f52.png",
+    "static/media/interface-button.mp3": "/static/media/interface-button.26371742bcb64f25256e.mp3",
+    "index.html": "/index.html",
+    "main.52f28d08.css.map": "/static/css/main.52f28d08.css.map",
+    "main.81b6d227.js.map": "/static/js/main.81b6d227.js.map",
+    "453.7b154009.chunk.js.map": "/static/js/453.7b154009.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52f28d08.css",
+    "static/js/main.81b6d227.js"
+  ]
+}

@@ -45,7 +45,15 @@ For subject CPE393, KMUTT
     - models
     - routers
 
-# Getting Started with Create React App
+# Start the production build 
+
+If you want to just run the product .First ,cd into `cd front`. 
+
+For first use, Use `npm install -g serve ` to install static server to serve the product. 
+
+Then use `serve -s build` to serve it with the static server
+
+# Editing this React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
