@@ -186,10 +186,10 @@
 .bgboard{
     z-index: -1;
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .sizeS:hover, .sizeM:hover, .sizeL:hover {
-    top: calc(80% - 2px);  
+    top: calc(80% - 2px); 
 }

@@ -4,6 +4,11 @@ import dog_icon from '../Assets/element/p&c/BigDog.png';
 import cat_icon from '../Assets/element/p&c/BigCat.png';
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from '../Assets/element/resetbutt.png';
+import Sbut from "../Assets/element/Sbutton.png";
+import Mbut from "../Assets/element/Mbutton.png";
+import Lbut from "../Assets/element/Lbutton.png";
+import sizebx from "../Assets/element/sizebox.png";
+import bgboard from "../Assets/element/boardgame.png";
 import header from '../Assets/element/3x3banner.png';
 //import axios from 'axios';
 
@@ -250,17 +255,17 @@ const TicTacToeAI = () => {
           <div className="boxes" onClick={(e) => handleClick(e, 8)}></div>
         </div>
       </div>
-      <div className="Size">
-        <button className="PieceSizeS" onClick={() => setSelectedSize('S')}>
-          S
+      <button className="sizeS" onClick={() => setSelectedSize('S')}>
+        <img src={Sbut} alt="S button" />
         </button>
-        <button className="PieceSizeM" onClick={() => setSelectedSize('M')}>
-          M
+        <button className="sizeM" onClick={() => setSelectedSize('M')}>
+        <img src={Mbut} alt="M button" />
         </button>
-        <button className="PieceSizeL" onClick={() => setSelectedSize('L')}>
-          L
+        <button className="sizeL" onClick={() => setSelectedSize('L')}>
+        <img src={Lbut} alt="L button" />
         </button>
-      </div>
+        <img className="bgboard" src={bgboard} alt="board"></img>
+        <img className="SIZEBOX" src={sizebx} alt="box"></img>
 
       <button className="reset" onClick={handleReset}>
         <img src={resetbutton} alt="Reset button" />
