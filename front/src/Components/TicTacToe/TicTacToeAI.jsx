@@ -5,7 +5,7 @@ import cat_icon from '../Assets/element/p&c/BigCat.png';
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from '../Assets/element/resetbutt.png';
 import header from '../Assets/element/3x3banner.png';
-import axios from 'axios';
+//import axios from 'axios';
 
 let data = [
   ["", 1],
