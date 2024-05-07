@@ -5,6 +5,7 @@ import cat_icon from '../Assets/element/p&c/BigCat.png';
 import BGvid from "../Assets/CloudBg.mp4";
 import resetbutton from '../Assets/element/resetbutt.png';
 import header from '../Assets/element/3x3banner.png';
+import axios from 'axios';
 
 let data = [
   ["", 1],
@@ -179,7 +180,17 @@ const TicTacToeAI = () => {
           (sizeA >= sizeB && sizeA >= sizeC) ||
           (sizeB >= sizeA && sizeB >= sizeC) ||
           (sizeC >= sizeA && sizeC >= sizeB))
-      ) {
+      ) 
+      {
+        if (playerA === 'username') {
+          axios.post('/api/users/leader', { username: 'username', wincount: 1})
+            .then(response => {
+              console.log(response.data);
+            })
+            .catch(error => {
+              console.error('There was an error!', error);
+            });
+        }
         return playerA;
       }
     }
