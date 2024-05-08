@@ -48,14 +48,8 @@ function MainGame() {
           className="button-img"
         ></img>
       </button>
-      <button className="Characterbut" onClick={handleCharacter}>
-        <img
-          src={profile}
-          alt="profile Button"
-          className="button-img"
-        ></img>
-      </button>
-      <button className="logoutbut" onClick={handleLogout}>
+      
+      <button className="Characterbut" onClick={handleLogout}>
         <img src={logoutbut} alt="Logout Button" className="button-img"></img>
       </button>
       <img className="hellott" src={hellott} alt="hellott"></img>
